@@ -225,7 +225,7 @@ local keybind = keybind or Enum.KeyCode.RightControl
 local yoo = string.gsub(tostring(keybind),"Enum.KeyCode.","")
 
 local Galaxy = Instance.new("ScreenGui")
-Galaxy.Name = "HUNTER X HUB"
+Galaxy.Name = "HUNTER X HUB Pro"
 Galaxy.Parent = game.CoreGui
 Galaxy.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -991,7 +991,7 @@ local TogglePadding = Instance.new("UIPadding")
 				imgLabelIcon.BackgroundTransparency = 1.000
 				imgLabelIcon.Position = UDim2.new(0, 5, 0, 8)
 				imgLabelIcon.Size = UDim2.new(0, 30, 0, 30)
-				imgLabelIcon.Image = "rbxassetid://17864195913" 
+				imgLabelIcon.Image = "rbxassetid://18804983248" 
 
 Title.Parent = Button
 Title.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
@@ -2303,7 +2303,7 @@ if game.PlaceId == 2753915549 then
     elseif game.PlaceId == 7449423635 then
         World3 = true
     else
-    Notification.Notify("Notification", "Game Not Support :( | Only Blox Fruits.", "rbxassetid://17416719866", {
+    Notification.Notify("Notification", "Game Not Support Only Blox Fruits.", "rbxassetid://17416719866", {
     Duration = 10,       
     Main = {
         Rounding = true,
