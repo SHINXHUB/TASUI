@@ -2,13 +2,13 @@ repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 _G.Primary = Color3.fromRGB(255, 255, 255)
 _G.Dark = Color3.fromRGB(0, 105, 148)
 ----------------------------------------------------------------------------------------------------------------------------------------
-_G.TieuDe = "HUNTER X HUB"
+_G.TieuDe = "HUNTER X HUB Pro"
 _G.ThongBaoChoose = "Blox Fruits"
 
 _G.YouTube = "https://www.youtube.com/@SCARLET-XD-MIKIMARU-HUB-"
 _G.YouTube = "https://youtube.com/@din321?si=pxPfyFtRj7f1WjG2"
 notis = require(game.ReplicatedStorage:WaitForChild("Notification"))
-notis.new("<Color=Red>Thank You Use SSR. HUB<Color=/>"):Display()
+notis.new("<Color=Red>Thank You Use HUNTER X HUB PRO<Color=/>"):Display()
 _G.SafeFarm = true
 assert(getrawmetatable)
     grm = getrawmetatable(game)
@@ -352,7 +352,7 @@ local Logo = Instance.new("ImageLabel")
 	Logo.BackgroundTransparency = 1
 	Logo.Position = UDim2.new(0, 10, 0, 10)
 	Logo.Size = UDim2.new(0, 120, 0, 120)
-	Logo.Image = "rbxassetid://17864195913"]]--
+	Logo.Image = "rbxassetid://18804983248"]]--
 local Tab = Instance.new("Frame")
 Tab.Name = "Tab"
 Tab.Parent = Main
@@ -796,7 +796,7 @@ TextBtn.Position = UDim2.new(0, 0, 0, 0)
 TextBtn.Size = UDim2.new(0, 379, 0, 33)
 TextBtn.AutoButtonColor = false
 TextBtn.Font = Enum.Font.SourceSansBold
-TextBtn.Text = "⇒ "..text.." ⇐"
+TextBtn.Text = "[ "..text.." ]"
 TextBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBtn.TextSize = 15.000
 
@@ -903,7 +903,7 @@ ImageButton.BackgroundTransparency = 1.000
 ImageButton.Position = UDim2.new(0, 357, 0, 3)
 ImageButton.Size = UDim2.new(0, 25, 0, 25)
 ImageButton.ZIndex = 2
-ImageButton.Image = "rbxassetid://17864195913"
+ImageButton.Image = "rbxassetid://18804983248"
 ImageButton.ImageColor3 = Color3.fromRGB(60,60,255)
 ImageButton.ImageRectOffset = Vector2.new(940, 784)
 ImageButton.ImageRectSize = Vector2.new(48, 48)
@@ -1381,7 +1381,7 @@ end
                 ImageLabel.BorderSizePixel = 0
                 ImageLabel.Position = UDim2.new(0, 7.5, 0, 7.5)
                 ImageLabel.Size = UDim2.new(0, 30, 0, 30)
-                ImageLabel.Image = "rbxassetid://17416719866"
+                ImageLabel.Image = "rbxassetid://18804983248"
                 
                 
                 
@@ -1707,7 +1707,7 @@ sliderrcorner.Parent = sliderr
                 ImageLabel.BorderSizePixel = 0
                 ImageLabel.Position = UDim2.new(0, 7.5, 0, 7.5)
                 ImageLabel.Size = UDim2.new(0, 30, 0, 30)
-                ImageLabel.Image = "rbxassetid://17864195913"
+                ImageLabel.Image = "rbxassetid://18804983248"
                 
                 
                 
