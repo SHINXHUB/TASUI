@@ -4454,7 +4454,6 @@ local S = Library:AddTab("Shop","rbxassetid://18804983248")
 local D = Library:AddTab("Fruit","rbxassetid://18804983248")
 local Misc = Library:AddTab("Miscellaneous","rbxassetid://18804983248")
 local One = Library:AddTab("One Click","rbxassetid://18804983248")
-local In = Library:AddTab("Info Script","rbxassetid://18804983248")
 local G = Library:AddTab("Game-Server","rbxassetid://18804983248")
 --------------------------------------------------------------------------------------------------------
 Galaxy:AddSeperator("HUNTER X HUB")
@@ -17452,25 +17451,7 @@ spawn(function()
         end)
     end
 end)
---------------------------------------------------------------------------------------------------------
-In:AddSeperator("info script")
 
-In:AddSeperator("Auto Parry Banned | 🟢")
-In:AddSeperator(" Status Script")
-In:AddSeperator("Now | 🟢")
-In:AddSeperator("if Status 🔴 = Banned 100%")
-In:AddSeperator("if Status 🟠 = Banned 50%")
-In:AddSeperator("if Status 🟢 = Banned 0%")
-In:AddSeperator("info One Click")
-In:AddSeperator("Now have Auto")
-In:AddSeperator("Auto Farm Level")
-In:AddSeperator("Auto Superhuman")
-In:AddSeperator("Auto SecondSea")
-In:AddSeperator("Auto ThirdSea")
-In:AddSeperator("Auto Buy LegendarySword")
-In:AddSeperator("Auto Store Fruit / Random Fruit")
-In:AddSeperator("Buy All Aib")
-In:AddSeperator("Buy All Sword")
 --------------------------------------------------------------------------------------------------------
     G:AddSeperator("Game-Server")
     
