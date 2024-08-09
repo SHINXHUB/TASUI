@@ -1,8 +1,33 @@
+local ScreenGui1 = Instance.new("ScreenGui")
+local ImageButton1 = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
+
+ScreenGui1.Name = "ImageButton"
+ScreenGui1.Parent = game.CoreGui
+ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageButton1.Parent = ScreenGui1
+ImageButton1.BackgroundColor3 = Color3.fromRGB(0, 105, 148)
+ImageButton1.BorderSizePixel = 0
+ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
+ImageButton1.Size = UDim2.new(0, 50, 0, 50)
+ImageButton1.Draggable = true
+ImageButton1.Image = "rbxassetid://18804983248"
+ImageButton1.MouseButton1Down:connect(function()
+  game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
+  game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
+end)
+UICorner.Parent = ImageButton1
+UIStroke.Color = Color3.fromRGB(0, 105, 148)
+UIStroke.Thickness = 1.5
+UIStroke.Parent = ImageButton1
+----------------------------------------------------------------------------------------------------------------------------------------
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-_G.Primary = Color3.fromRGB(255, 255, 255)
+_G.Primary = Color3.fromRGB(0, 105, 148)
 _G.Dark = Color3.fromRGB(0, 105, 148)
 ----------------------------------------------------------------------------------------------------------------------------------------
-_G.TieuDe = "HUNTER X HUB"
+_G.TieuDe = "HUNTER X HUB Pro"
 _G.ThongBaoChoose = "Blox Fruits"
 
 _G.YouTube = "https://www.youtube.com/@SCARLET-XD-MIKIMARU-HUB-"
@@ -4438,16 +4463,16 @@ end)
 --------------------------------------------------------------------------------------------------------
 local Library = Update:Window("HUNTER X HUB","BLOX FRUIT",Enum.KeyCode.RightControl);
 --------------------------------------------------------------------------------------------------------
-local Galaxy = Library:AddTab("Information","rbxassetid://18804983248")
+local Galaxy = Library:AddTab("Welcome","rbxassetid://18804983248")
 local Settings = Library:AddTab("Settings","rbxassetid://18804983248")
-local Main = Library:AddTab("Main","rbxassetid://18804983248")
+local Main = Library:AddTab("Main Auto Farm","rbxassetid://18804983248")
 local M = Library:AddTab("Sub-Farming","rbxassetid://18804983248")
 local Ss = Library:AddTab("Stats","rbxassetid://18804983248")
 local RaceV4 = Library:AddTab("Race V4","rbxassetid://18804983248")
 local EventGame = Library:AddTab("Sea Event","rbxassetid://18804983248")
 local P = Library:AddTab("Local Player","rbxassetid://18804983248")
 local Status = Library:AddTab("Status Sever","rbxassetid://18804983248")
-local Visual = Library:AddTab("Esp-Hack","rbxassetid://18804983248")
+local Visual = Library:AddTab("Esp Hack","rbxassetid://18804983248")
 local R = Library:AddTab("Dungeon","rbxassetid://18804983248")
 local T = Library:AddTab("Travel","rbxassetid://18804983248")
 local S = Library:AddTab("Shop","rbxassetid://18804983248")
@@ -12973,6 +12998,9 @@ end)
 EventGame:AddButton("Trade Azure Ember",function()
 game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Net"):WaitForChild("RF/KitsuneStatuePray"):InvokeServer()
  end)
+ 
+EventGame:AddSeperator("Leviathan ( Premium | Vip )")
+    
 --------------------------------------------------------------------------------------------------------
 Visual:AddSeperator("Esp")
 Visual:AddToggle("Esp Island Kitsune",false,function(value)
@@ -17069,7 +17097,7 @@ spawn(function()
         end
     end)
     end)
-FakeDamage("HUNTER X HUB")
+FakeDamage("HUNTER X HUB Pro")
 --------------------------------------------------------------------------------------------------------
 One:AddSeperator("One Click")
 
@@ -17548,31 +17576,7 @@ end)
 	        end
 	    end)
 ----------------------------------------------------------------------------------------------------------------------------------------
-local ScreenGui1 = Instance.new("ScreenGui")
-local ImageButton1 = Instance.new("ImageButton")
-local UICorner = Instance.new("UICorner")
-local UIStroke = Instance.new("UIStroke")
 
-ScreenGui1.Name = "ImageButton"
-ScreenGui1.Parent = game.CoreGui
-ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-ImageButton1.Parent = ScreenGui1
-ImageButton1.BackgroundColor3 = Color3.fromRGB(0, 105, 148)
-ImageButton1.BorderSizePixel = 0
-ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
-ImageButton1.Size = UDim2.new(0, 50, 0, 50)
-ImageButton1.Draggable = true
-ImageButton1.Image = "rbxassetid://18804983248"
-ImageButton1.MouseButton1Down:connect(function()
-  game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
-  game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
-end)
-UICorner.Parent = ImageButton1
-UIStroke.Color = Color3.fromRGB(0, 105, 148)
-UIStroke.Thickness = 1.5
-UIStroke.Parent = ImageButton1
-----------------------------------------------------------------------------------------------------------------------------------------
 Notification.Notify("Notification", "Thank You For Using HUNTER X HUB", "rbxassetid://18804983248", {
     Duration = 5,       
     Main = {
