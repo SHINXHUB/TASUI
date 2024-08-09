@@ -4,20 +4,20 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 --------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
     Title = "HUNTER X HUB",
-    SubTitle = "True By HUNTER",
+    SubTitle = "Pro",
     TabWidth = 160,
     Size = UDim2.fromOffset(450, 300),
-    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Black",
-    MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
+    Acrylic = true, -- อาจตรวจจับความเบลอได้ การตั้งค่านี้เป็นเท็จจะทำให้ความเบลอไม่ปรากฏขึ้นเลย
+    Theme = "Darker",
+    MinimizeKey = Enum.KeyCode.End -- ใช้เมื่อไม่มี MinimizeKeybind
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main Auto  Farm", Icon = "home" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "home" }),
     Setting = Window:AddTab({ Title = "Setting", Icon = "settings" }),
     Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
     Player = Window:AddTab({ Title = "Player", Icon = "baby" }),
-    Teleport = Window:AddTab({ Title = "Travel", Icon = "palmtree" }),
-    Fruit = Window:AddTab({ Title = "Fruit", Icon = "cherry" }),
+    Teleport = Window:AddTab({ Title = "Teleport", Icon = "palmtree" }),
+    Fruit = Window:AddTab({ Title = "Devil Fruit", Icon = "cherry" }),
     Raid = Window:AddTab({ Title = "Dungeon", Icon = "swords" }),
     Race = Window:AddTab({ Title = "Race V4", Icon = "chevrons-right" }),
     Shop = Window:AddTab({ Title = "Shop", Icon = "shopping-cart" }),
@@ -2383,12 +2383,12 @@ local posZ = 0
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Create Tabs
     Tabs.Main:AddParagraph({
-        Title = "Main",
+        Title = "Farming",
         Content = "Auto Farm"
     })
 
     local DropdownSelectWeapon = Tabs.Main:AddDropdown("DropdownSelectWeapon", {
-        Title = "Select Weapon",
+        Title = "Dropdown",
         Values = {'Melee','Sword','Blox Fruit'},
         Multi = false,
         Default = 1,
@@ -2438,7 +2438,7 @@ local posZ = 0
     end)
 
 
-    local ToggleAutoFarmLevel = Tabs.Main:AddToggle("ToggleAutoFarmLevel", {Title = "Auto Level", Default = false })
+    local ToggleAutoFarmLevel = Tabs.Main:AddToggle("ToggleAutoFarmLevel", {Title = "Auto Farm Level", Default = false })
     ToggleAutoFarmLevel:OnChanged(function(Value)
         _G.AutoLevel = Value
     end)
@@ -2504,7 +2504,7 @@ local posZ = 0
         game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy()
     end
 
-    local ToggleMobAura = Tabs.Main:AddToggle("ToggleMobAura", {Title = "Kill Aura", Default = false })
+    local ToggleMobAura = Tabs.Main:AddToggle("ToggleMobAura", {Title = "Auto Near Mob", Default = false })
     ToggleMobAura:OnChanged(function(Value)
         _G.AutoNear = Value
     end)
@@ -2540,8 +2540,8 @@ local posZ = 0
       end)
 
       Tabs.Main:AddButton({
-        Title = "Redeem Code",
-        Description = "Redeem Code",
+        Title = "Redeem All Code",
+        Description = "Redeem all code x2 exp",
         Callback = function()
             UseCode()
         end
@@ -2570,7 +2570,7 @@ local posZ = 0
 
     Tabs.Main:AddButton({
         Title = "Fps Booster",
-        Description = "Fps Booster",
+        Description = "Boost your fps",
         Callback = function()
             FPSBooster()
         end
@@ -2621,13 +2621,13 @@ local posZ = 0
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Mastery
     Tabs.Main:AddParagraph({
-        Title = "Mastery",
-        Content = "Mastery"
+        Title = "Mastery Farm",
+        Content = "Auto farm your mastery"
     })
 
     local DropdownMastery = Tabs.Main:AddDropdown("DropdownMastery", {
-        Title = "Mode",
-        Values = {"Level","Aura",},
+        Title = "Farm Mode",
+        Values = {"Level","Near Mobs",},
         Multi = false,
         Default = 1,
     })
@@ -2638,13 +2638,13 @@ local posZ = 0
         TypeMastery = Value
     end)
 
-    local ToggleMasteryFruit = Tabs.Main:AddToggle("ToggleMasteryFruit", {Title = "Auto Mastery [ Fruit ]", Default = false })
+    local ToggleMasteryFruit = Tabs.Main:AddToggle("ToggleMasteryFruit", {Title = "Auto BF Mastery", Default = false })
     ToggleMasteryFruit:OnChanged(function(Value)
         AutoFarmMasDevilFruit = Value
     end)
     Options.ToggleMasteryFruit:SetValue(false)
 
-    local ToggleMasteryGun = Tabs.Main:AddToggle("ToggleMasteryGun", {Title = "Auto Mastery [ Gun ]", Default = false })
+    local ToggleMasteryGun = Tabs.Main:AddToggle("ToggleMasteryGun", {Title = "Auto Gun Mastery", Default = false })
     ToggleMasteryGun:OnChanged(function(Value)
         AutoFarmMasGun = Value
     end)
@@ -2654,7 +2654,7 @@ local posZ = 0
 
     KillPercent = 40
     local SliderHealt = Tabs.Main:AddSlider("SliderHealt", {
-        Title = "Health ",
+        Title = "Health %",
         Description = "Health for mastery",
         Default = 40,
         Min = 0,
@@ -3166,10 +3166,10 @@ end)
 
 Tabs.Main:AddParagraph({
     Title = "Misc Farm",
-    Content = "Bone end Cake Prince "
+    Content = "Bone & Cake Prince & "
 })
 
-local ToggleBone = Tabs.Main:AddToggle("ToggleBone", {Title = "Auto Bone", Default = false })
+local ToggleBone = Tabs.Main:AddToggle("ToggleBone", {Title = "Auto Farm Bone", Default = false })
 ToggleBone:OnChanged(function(Value)
     _G.AutoBone = Value
 end)
@@ -3240,7 +3240,7 @@ spawn(function()
 end)
 
 
-local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {Title = "Auto Cake Prince", Default = false })
+local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {Title = "Auto Farm Cake Prince", Default = false })
 ToggleCake:OnChanged(function(Value)
  _G.CakePrince = Value
 end)
@@ -3320,7 +3320,7 @@ spawn(function()
 
 
 
-    local ToggleVatChatKiDi = Tabs.Main:AddToggle("ToggleVatChatKiDi", {Title = "Auto Ectoplasm", Default = false })
+    local ToggleVatChatKiDi = Tabs.Main:AddToggle("ToggleVatChatKiDi", {Title = "Auto Farm Ectoplasm", Default = false })
     ToggleVatChatKiDi:OnChanged(function(Value)
         _G.Ecto = Value
     end)
@@ -3389,7 +3389,7 @@ spawn(function()
 
 
     local DropdownBoss = Tabs.Main:AddDropdown("DropdownBoss", {
-        Title = "Boss",
+        Title = "Dropdown",
         Values = tableBoss,
         Multi = false,
         Default = 1,
@@ -3401,7 +3401,7 @@ spawn(function()
     end)
 
 
-	local ToggleAutoFarmBoss = Tabs.Main:AddToggle("ToggleAutoFarmBoss", {Title = "Auto Boss", Default = false })
+	local ToggleAutoFarmBoss = Tabs.Main:AddToggle("ToggleAutoFarmBoss", {Title = "Killing Boss", Default = false })
 
     ToggleAutoFarmBoss:OnChanged(function(Value)
 		_G.AutoBoss = Value
@@ -3481,7 +3481,7 @@ spawn(function()
 
     Tabs.Main:AddParagraph({
         Title = "Material",
-        Content = "Auto Material"
+        Content = "Auto farm material"
     })
 
     if First_Sea then
@@ -3497,7 +3497,7 @@ spawn(function()
         end
 
     local DropdownMaterial = Tabs.Main:AddDropdown("DropdownMaterial", {
-        Title = "Material???",
+        Title = "Dropdown",
         Values = MaterialList,
         Multi = false,
         Default = 1,
@@ -3510,7 +3510,7 @@ spawn(function()
     end)
 
 
-    local ToggleMaterial = Tabs.Main:AddToggle("ToggleMaterial", {Title = "Auto Material", Default = false })
+    local ToggleMaterial = Tabs.Main:AddToggle("ToggleMaterial", {Title = "Auto Farm Material", Default = false })
 
     ToggleMaterial:OnChanged(function(Value)
         _G.AutoMaterial = Value
@@ -3567,11 +3567,11 @@ if Third_Sea then
 
       Tabs.Main:AddParagraph({
         Title = "Rough Sea",
-        Content = "Auto Rough Sea"
+        Content = "Auto rough sea"
     })
 
 
-    local ToggleBoat = Tabs.Main:AddToggle("ToggleBoat", {Title = "Start Farming Sea Event", Default = false })
+    local ToggleBoat = Tabs.Main:AddToggle("ToggleBoat", {Title = "Auto Buy Boat", Default = false })
 
     ToggleBoat:OnChanged(function(Value)
         _G.AutoBuyBoat = Value
@@ -3670,7 +3670,7 @@ if Third_Sea then
     
 
 
-    local ToggleTerrorshark = Tabs.Main:AddToggle("ToggleTerrorshark", {Title = "Auto Terror Shark", Default = false })
+    local ToggleTerrorshark = Tabs.Main:AddToggle("ToggleTerrorshark", {Title = "Auto Kill Terrorshark", Default = false })
 
     ToggleTerrorshark:OnChanged(function(Value)
         _G.AutoTerrorshark = Value
@@ -3710,7 +3710,7 @@ if Third_Sea then
 
 
 
-     local TogglePiranha = Tabs.Main:AddToggle("TogglePiranha", {Title = "Auto Piranha", Default = false })
+     local TogglePiranha = Tabs.Main:AddToggle("TogglePiranha", {Title = "Auto Kill Piranha", Default = false })
 
      TogglePiranha:OnChanged(function(Value)
         _G.farmpiranya = Value
@@ -3753,7 +3753,7 @@ if Third_Sea then
 
      Tabs.Main:AddParagraph({
         Title = "Elite Hunter",
-        Content = "Elite Hunter"
+        Content = "Auto find and kill boss elite"
     })
 
 
@@ -3830,7 +3830,7 @@ if Third_Sea then
 
        Tabs.Main:AddParagraph({
         Title = "Sea Beast",
-        Content = "Auto Sea Beast"
+        Content = "Auto Kill Sea Beast"
     })
 
 
@@ -3987,7 +3987,7 @@ ToggleAutoW:OnChanged(function(Value)
 
  Tabs.Main:AddParagraph({
     Title = "Mirage Island",
-    Content = "Auto Summon Mirage Island"
+    Content = "Auto Summon Mystic Island"
 })
 
 
