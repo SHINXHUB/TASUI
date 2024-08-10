@@ -1878,7 +1878,7 @@ function Blacklib:Window()
 end
 
 
-local ui = Blacklib:Window("HUNTER X HUB")
+local ui = Blacklib:Window("HUNTER X HUB Pro")
 
 local M = ui:Tab("Main Farm","rbxassetid://11446825283")
 local F = ui:Tab("Sub Farming","rbxassetid://9260732790")
@@ -12293,7 +12293,7 @@ end)
 		end)
 	end)
 
-    Misc:Label("📜 Codes 📜")
+    Misc:Label(" Codes ")
     
     local x2Code = {
         "FUDD10",
@@ -12332,7 +12332,7 @@ end)
         game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer(_G.CodeSelect)
     end)
     
-    Misc:Label("📊 State 📊")
+    Misc:Label(" State ")
     
     Misc:Dropdown("Select Haki State",{"State 0","State 1","State 2","State 3","State 4","State 5"},function(value)
         _G.SelectStateHaki = value
@@ -12354,7 +12354,7 @@ end)
         end
     end)
     
-    Misc:Label("✈️ Boost FPS  ✈️")
+    Misc:Label(" Boost FPS  ")
     
     local a = game.Lighting
     local c = Instance.new("ColorCorrectionEffect", a)
@@ -12600,7 +12600,7 @@ end
 end
 end)
 
-    Misc:Label("👾 Race Boost 👾")
+    Misc:Label(" Race Boost ")
 
     Misc:Toggle("Auto Active Race",_G.AutoAgility,function(value)
         _G.AutoAgility = value
@@ -12650,7 +12650,7 @@ RaceV4:Label("You Are Not in Third Sea!!")
 end
 
 if World3 then
-    RaceV4:Label("👾 Race V4 👾")
+    RaceV4:Label(" Race V4 ")
     
 RaceV4:Button("Teleport To Top Of GreatTree",function()
   Tween(CFrame.new(2947.556884765625, 2281.630615234375, -7213.54931640625))
