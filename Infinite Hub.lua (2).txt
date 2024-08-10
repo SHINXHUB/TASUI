@@ -3170,6 +3170,7 @@ ToggleBone:OnChanged(function(Value)
     _G.AutoBone = Value
 end)
 Options.ToggleBone:SetValue(false)
+local FaiFaoQuestBone =  CFrame.new(-9515.75, 174.8521728515625, 6079.40625)
 
 
 spawn(function()
@@ -3233,7 +3234,6 @@ spawn(function()
         end
     end
 end)
-
 
 
 local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {Title = "Auto Katakuri", Default = false })
