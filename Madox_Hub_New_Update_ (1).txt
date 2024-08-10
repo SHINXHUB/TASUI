@@ -105,7 +105,7 @@ function Blacklib:Window()
     BlackImage.BackgroundTransparency = 1.000
     BlackImage.Position = UDim2.new(0, 3, 0, 3)
     BlackImage.Size = UDim2.new(0, 25, 0, 25)
-    BlackImage.Image = "rbxassetid://12511245920"
+    BlackImage.Image = "rbxassetid://18880986140"
     BlackImage.ImageColor3 = Color3.fromRGB(255,255,255)
     
     BlackTitle.Name = "BlackTitle"
@@ -526,7 +526,7 @@ function Blacklib:Window()
         TabImage.BackgroundTransparency = 1.000
         TabImage.Position = UDim2.new(0, 3, 0, 4)
         TabImage.Size = UDim2.new(0, 20, 0, 20)
-        TabImage.Image = img or "rbxassetid://8666601749"
+        TabImage.Image = img or "rbxassetid://18880986140"
         TabImage.ImageColor3 = Color3.fromRGB(200,200,200)
         
         TabTitle.Name = tabtitle or "TabTitle"
@@ -834,7 +834,7 @@ function Blacklib:Window()
                 ImageLabel.BorderSizePixel = 0
                 ImageLabel.Position = UDim2.new(0, 5, 0, 6)
                 ImageLabel.Size = UDim2.new(0, 18, 0, 18)
-                ImageLabel.Image = "rbxassetid://8825010231"
+                ImageLabel.Image = "rbxassetid://18880986140"
                 ImageLabel.ImageColor3 = Color3.fromRGB(180,180,180)
                 
                 Space.Name = "Space"
@@ -962,7 +962,7 @@ function Blacklib:Window()
                 ImageLabel.BorderSizePixel = 0
                 ImageLabel.Position = UDim2.new(0, 5, 0, 6)
                 ImageLabel.Size = UDim2.new(0, 18, 0, 18)
-                ImageLabel.Image = "rbxassetid://8825005073"
+                ImageLabel.Image = "rbxassetid://18880986140"
                 ImageLabel.ImageColor3 = Color3.fromRGB(180,180,180)
                 
                 Space.Name = "Space"
@@ -995,7 +995,7 @@ function Blacklib:Window()
                 ImageButton.BackgroundTransparency = 1.000
                 ImageButton.Position = UDim2.new(0, 352, 0, 7)
                 ImageButton.Size = UDim2.new(0, 23, 0, 18)
-                ImageButton.Image = "rbxassetid://8530745436"
+                ImageButton.Image = "rbxassetid://18880986140"
                 ImageButton.ImageColor3 = Color3.fromRGB(180,180,180)
                 ImageButton.Rotation = 180
                 
@@ -1275,7 +1275,7 @@ function Blacklib:Window()
                 ImageLabel.BorderSizePixel = 0
                 ImageLabel.Position = UDim2.new(0, 5, 0, 5)
                 ImageLabel.Size = UDim2.new(0, 18, 0, 18)
-                ImageLabel.Image = "rbxassetid://8825007757"
+                ImageLabel.Image = "rbxassetid://18880986140"
                 ImageLabel.ImageColor3 = Color3.fromRGB(180,180,180)
                 
                 Space.Name = "Space"
@@ -1612,7 +1612,7 @@ function Blacklib:Window()
                 ImageLabel.BorderSizePixel = 0
                 ImageLabel.Position = UDim2.new(0, 5, 0, 12)
                 ImageLabel.Size = UDim2.new(0, 18, 0, 18)
-                ImageLabel.Image = "rbxassetid://8825051254"
+                ImageLabel.Image = "rbxassetid://18880986140"
                 ImageLabel.ImageColor3 = Color3.fromRGB(180,180,180)
                 
                 Space.Name = "Space"
@@ -1742,7 +1742,7 @@ function Blacklib:Window()
                 ImageLabel.BorderSizePixel = 0
                 ImageLabel.Position = UDim2.new(0, 5, 0, 12)
                 ImageLabel.Size = UDim2.new(0, 18, 0, 18)
-                ImageLabel.Image = "rbxassetid://8930945601"
+                ImageLabel.Image = "rbxassetid://18880986140"
                 ImageLabel.ImageColor3 = Color3.fromRGB(180,180,180)
                 
                 Space.Name = "Space"
@@ -1878,17 +1878,17 @@ function Blacklib:Window()
 end
 
 
-local ui = Blacklib:Window("Madox")
+local ui = Blacklib:Window("HUNTER X HUB")
 
-local M = ui:Tab("Main","rbxassetid://11446825283")
-local F = ui:Tab("Farm/Quest","rbxassetid://9260732790")
+local M = ui:Tab("Main Farm","rbxassetid://11446825283")
+local F = ui:Tab("Sub Farming","rbxassetid://9260732790")
 local S = ui:Tab("Stats","rbxassetid://11447069304")
-local De = ui:Tab("Sea Quest","rbxassetid://7044284832")
-local C = ui:Tab("Combats","rbxassetid://11446900930")
-local T = ui:Tab("Teleport","rbxassetid://11446920523")
-local D = ui:Tab("Raid/Esp","rbxassetid://11446957539")
+local De = ui:Tab("Sea Event","rbxassetid://7044284832")
+local C = ui:Tab("Player PVP","rbxassetid://11446900930")
+local T = ui:Tab("Travel","rbxassetid://11446920523")
+local D = ui:Tab("Raid Esp","rbxassetid://11446957539")
 local U = ui:Tab("Fruit","rbxassetid://11446965348")
-local H = ui:Tab("Shops","rbxassetid://6031265976")
+local H = ui:Tab("Shop","rbxassetid://6031265976")
 local Misc = ui:Tab("Misc","rbxassetid://11447063791")
 local R = ui:Tab("RaceV4","rbxassetid://11446900930")
 ---------------------------------------------------------------------------------------------------
