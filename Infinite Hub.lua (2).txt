@@ -3301,15 +3301,15 @@ spawn(function()
     end
     end
     else
-    local cakepos = CFrame.new(-2077, 252, -12373)
-  if BypassTP then
-  if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - cakepos.Position).Magnitude > 2000 then
-  BTP(cakepos)
-  wait(3)
-  elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - cakepos.Position).Magnitude < 2000 then
-  Tween(cakepos)
-  end
-  else
+      local cakepos = CFrame.new(-2077, 252, -12373)
+    if BypassTP then
+    if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - cakepos.Position).Magnitude > 2000 then
+    BTP(cakepos)
+    wait(3)
+    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - cakepos.Position).Magnitude < 2000 then
+    Tween(cakepos)
+    end
+    else
     Tween(cakepos)
   end
   end
@@ -3317,10 +3317,9 @@ spawn(function()
   end
   end
   end)
-
-
-
-
+  
+  
+  
     local ToggleVatChatKiDi = Tabs.Main:AddToggle("ToggleVatChatKiDi", {Title = "Auto Farm Ectoplasm", Default = false })
     ToggleVatChatKiDi:OnChanged(function(Value)
         _G.Ecto = Value
