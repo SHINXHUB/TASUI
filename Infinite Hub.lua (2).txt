@@ -3301,22 +3301,6 @@ spawn(function()
     end
     end
     else
-      local cakepos = CFrame.new(-2077, 252, -12373)
-    if BypassTP then
-    if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - cakepos.Position).Magnitude > 2000 then
-    BTP(cakepos)
-    wait(3)
-    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - cakepos.Position).Magnitude < 2000 then
-    Tween(cakepos)
-    end
-    else
-    Tween(v.HumanoidRootPart.CFrame * Pos2)
-    end
-    end
-    end
-    end
-    end
-    end)
     local cakepos = CFrame.new(-2077, 252, -12373)
   if BypassTP then
   if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - cakepos.Position).Magnitude > 2000 then
