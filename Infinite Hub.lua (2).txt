@@ -4489,7 +4489,7 @@ end)
       if isnetworkowner then
       return isnetworkowner(object)
       else
-        if (object.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 400 then
+        if (object.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 380 then
       return true
       end
       return false
@@ -4498,7 +4498,7 @@ end)
 
 
 
-    local ToggleBypassTP = Tabs.Setting:AddToggle("ToggleBypassTP", {Title = "Bypass Tp", Default = false })
+    local ToggleBypassTP = Tabs.Setting:AddToggle("ToggleBypassTP", {Title = "Bypass Tp", Default = true })
     ToggleBypassTP:OnChanged(function(Value)
         BypassTP = Value
     end)
