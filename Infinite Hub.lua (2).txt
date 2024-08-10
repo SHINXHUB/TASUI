@@ -4417,11 +4417,11 @@ function AttackHit()
         bladehit = cac
         if #bladehit > 0 then
             pcall(function()
-                CmrFwLib.activeController.timeToNextAttack = 1
+                CmrFwLib.activeController.timeToNextAttack = 0
                 CmrFwLib.activeController.attacking = false
                 CmrFwLib.activeController.blocking = false
                 CmrFwLib.activeController.timeToNextBlock = 0
-                CmrFwLib.activeController.increment = 3
+                CmrFwLib.activeController.increment = 0.1
                 CmrFwLib.activeController.hitboxMagnitude = 60
                 CmrFwLib.activeController.focusStart = 0
                 game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("weaponChange",tostring(GetBladeHit()))
@@ -4442,8 +4442,6 @@ spawn(function()
     end
 end)
 
-local CamShake = require(game.ReplicatedStorage.Util.CameraShaker)
-CamShake:Stop()
 
 
 
@@ -4491,7 +4489,7 @@ CamShake:Stop()
       if isnetworkowner then
       return isnetworkowner(object)
       else
-        if (object.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 350 then
+        if (object.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 400 then
       return true
       end
       return false
@@ -5243,6 +5241,14 @@ end)
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Raid
 
+
+
+    local ToggleStart = Tabs.Raid:AddToggle("ToggleStart", {Title = "Auto Farm Dungeon", Default = false })
+    ToggleStart:OnChanged(function(Value)
+        _G.Auto_Dungeon = Value
+        StopTween(_G.Auto_Dungeon)
+end)
+Options.ToggleStart:SetValue(false)
 
 
 local Chips = {"Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough"}
