@@ -3310,14 +3310,14 @@ spawn(function()
     Tween(cakepos)
     end
     else
-    Tween(cakepos)
-  end
-  end
-  end
-  end
-  end
-  end)
-  
+    Tween(v.HumanoidRootPart.CFrame * Pos2)
+    end
+    end
+    end
+    end
+    end
+    end)
+
   
   
     local ToggleVatChatKiDi = Tabs.Main:AddToggle("ToggleVatChatKiDi", {Title = "Auto Farm Ectoplasm", Default = false })
