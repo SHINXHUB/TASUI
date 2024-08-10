@@ -1878,7 +1878,7 @@ function Blacklib:Window()
 end
 
 
-local ui = Blacklib:Window("Madox")
+local ui = Blacklib:Window("HUNTER X HUB Pro")
 
 local M = ui:Tab("Main","rbxassetid://11446825283")
 local F = ui:Tab("Farm/Quest","rbxassetid://9260732790")
