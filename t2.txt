@@ -1,3 +1,19 @@
+Notification.Notify("Notification", "If You Use Fluxus HUNTER X HUB Will Very Good", "rbxassetid://18915600398", {
+    Duration = 5,       
+    Main = {
+        Rounding = true,
+    }
+    });
+wait(6)
+Notification.Notify("Notification", "If You Use Fluxus HUNTER X HUB Will Very Good", "rbxassetid://18915600398", {
+    Duration = 10,       
+    Main = {
+        Rounding = true,
+    }
+    });
+    
+----------------------------------------------------------------------------------------------------------------------------------------
+
 local ScreenGui1 = Instance.new("ScreenGui")
 local ImageButton1 = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
@@ -13,7 +29,7 @@ ImageButton1.BorderSizePixel = 0
 ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton1.Size = UDim2.new(0, 50, 0, 50)
 ImageButton1.Draggable = true
-ImageButton1.Image = "rbxassetid://18804983248"
+ImageButton1.Image = "rbxassetid://18915600398"
 ImageButton1.MouseButton1Down:connect(function()
   game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
   game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
@@ -377,7 +393,7 @@ local Logo = Instance.new("ImageLabel")
 	Logo.BackgroundTransparency = 1
 	Logo.Position = UDim2.new(0, 10, 0, 10)
 	Logo.Size = UDim2.new(0, 120, 0, 120)
-	Logo.Image = "rbxassetid://17864195913"]]--
+	Logo.Image = "rbxassetid://18915600398"]]--
 local Tab = Instance.new("Frame")
 Tab.Name = "Tab"
 Tab.Parent = Main
@@ -928,7 +944,7 @@ ImageButton.BackgroundTransparency = 1.000
 ImageButton.Position = UDim2.new(0, 357, 0, 3)
 ImageButton.Size = UDim2.new(0, 25, 0, 25)
 ImageButton.ZIndex = 2
-ImageButton.Image = "rbxassetid://18804983248"
+ImageButton.Image = "rbxassetid://18915600398"
 ImageButton.ImageColor3 = Color3.fromRGB(60,60,255)
 ImageButton.ImageRectOffset = Vector2.new(940, 784)
 ImageButton.ImageRectSize = Vector2.new(48, 48)
@@ -1016,7 +1032,7 @@ local TogglePadding = Instance.new("UIPadding")
 				imgLabelIcon.BackgroundTransparency = 1.000
 				imgLabelIcon.Position = UDim2.new(0, 5, 0, 8)
 				imgLabelIcon.Size = UDim2.new(0, 30, 0, 30)
-				imgLabelIcon.Image = "rbxassetid://18804983248" 
+				imgLabelIcon.Image = "rbxassetid://18915600398" 
 
 Title.Parent = Button
 Title.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
@@ -1141,7 +1157,7 @@ local imgLabelIcon = Instance.new("ImageLabel")
 				imgLabelIcon.BackgroundTransparency = 1.000
 				imgLabelIcon.Position = UDim2.new(0, 5, 0, 3)
 				imgLabelIcon.Size = UDim2.new(0, 30, 0, 30)
-				imgLabelIcon.Image = "rbxassetid://18804983248" 
+				imgLabelIcon.Image = "rbxassetid://18915600398" 
 
 DropTitle.Name = "DropTitle"
 DropTitle.Parent = Dropdown
@@ -1406,7 +1422,7 @@ end
                 ImageLabel.BorderSizePixel = 0
                 ImageLabel.Position = UDim2.new(0, 7.5, 0, 7.5)
                 ImageLabel.Size = UDim2.new(0, 30, 0, 30)
-                ImageLabel.Image = "rbxassetid://17416719866"
+                ImageLabel.Image = "rbxassetid://18915600398"
                 
                 
                 
@@ -1732,7 +1748,7 @@ sliderrcorner.Parent = sliderr
                 ImageLabel.BorderSizePixel = 0
                 ImageLabel.Position = UDim2.new(0, 7.5, 0, 7.5)
                 ImageLabel.Size = UDim2.new(0, 30, 0, 30)
-                ImageLabel.Image = "rbxassetid://18804983248"
+                ImageLabel.Image = "rbxassetid://18915600398"
                 
                 
                 
@@ -4463,23 +4479,22 @@ end)
 --------------------------------------------------------------------------------------------------------
 local Library = Update:Window("HUNTER X HUB","BLOX FRUIT",Enum.KeyCode.RightControl);
 --------------------------------------------------------------------------------------------------------
-local Galaxy = Library:AddTab("Welcome","rbxassetid://18804983248")
-local Settings = Library:AddTab("Settings","rbxassetid://18804983248")
-local Main = Library:AddTab("Main Auto Farm","rbxassetid://18804983248")
-local M = Library:AddTab("Sub-Farming","rbxassetid://18804983248")
-local Ss = Library:AddTab("Stats","rbxassetid://18804983248")
-local RaceV4 = Library:AddTab("Race V4","rbxassetid://18804983248")
-local EventGame = Library:AddTab("Sea Event","rbxassetid://18804983248")
-local P = Library:AddTab("Local Player","rbxassetid://18804983248")
-local Status = Library:AddTab("Status Sever","rbxassetid://18804983248")
-local Visual = Library:AddTab("Esp Hack","rbxassetid://18804983248")
-local R = Library:AddTab("Dungeon","rbxassetid://18804983248")
-local T = Library:AddTab("Travel","rbxassetid://18804983248")
-local S = Library:AddTab("Shop","rbxassetid://18804983248")
-local D = Library:AddTab("Fruit","rbxassetid://18804983248")
-local Misc = Library:AddTab("Miscellaneous","rbxassetid://18804983248")
-local One = Library:AddTab("One Click","rbxassetid://18804983248")
-local G = Library:AddTab("Game-Server","rbxassetid://18804983248")
+local Galaxy = Library:AddTab("Welcome","rbxassetid://18915600398")
+local Settings = Library:AddTab("Settings","rbxassetid://18915600398")
+local Main = Library:AddTab("Main Auto Farm","rbxassetid://18915600398")
+local M = Library:AddTab("Sub-Farming","rbxassetid://18915600398")
+local Ss = Library:AddTab("Stats","rbxassetid://18915600398")
+local RaceV4 = Library:AddTab("Race V4","rbxassetid://18915600398")
+local EventGame = Library:AddTab("Sea Event","rbxassetid://18915600398")
+local P = Library:AddTab("Local Player","rbxassetid://18915600398")
+local Status = Library:AddTab("Status Sever","rbxassetid://18915600398")
+local Visual = Library:AddTab("Esp Hack","rbxassetid://18915600398")
+local R = Library:AddTab("Dungeon","rbxassetid://18915600398")
+local T = Library:AddTab("Travel","rbxassetid://18915600398")
+local S = Library:AddTab("Shop","rbxassetid://18915600398")
+local D = Library:AddTab("Fruit","rbxassetid://18915600398")
+local Misc = Library:AddTab("Miscellaneous","rbxassetid://18915600398")
+local One = Library:AddTab("One Click","rbxassetid://18915600398")
 --------------------------------------------------------------------------------------------------------
 Galaxy:AddSeperator("HUNTER X HUB")
 Galaxy:UserGalaxy()
@@ -14935,6 +14950,101 @@ spawn(function()
     end)
 end)
 
+    Status:AddSeperator("Game-Server")
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                JobID:Set("Job ID:".." "..game.JobId)
+            end)
+        end
+    end)
+    
+    JobID = GAddLabel("Job ID: ")
+    
+    Status:AddButton("Rejoin Server",function()
+        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+    end)
+    
+    Status:AddButton("Server Hop",function()
+        Hop()
+    end)
+    
+    Status:AddButton("Hop To Lower Player",function()
+        getgenv().AutoTeleport = true
+        getgenv().DontTeleportTheSameNumber = true 
+        getgenv().CopytoClipboard = false
+        if not game:IsLoaded() then
+            print("Game is loading waiting...")
+        end
+        local maxplayers = math.huge
+        local serversmaxplayer;
+        local goodserver;
+        local gamelink = "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100" 
+        function serversearch()
+            for _, v in pairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync(gamelink)).data) do
+                if type(v) == "table" and v.playing ~= nil and maxplayers > v.playing then
+                    serversmaxplayer = v.maxPlayers
+                    maxplayers = v.playing
+                    goodserver = v.id
+                end
+            end       
+        end
+        function getservers()
+            serversearch()
+            for i,v in pairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync(gamelink))) do
+                if i == "nextPageCursor" then
+                    if gamelink:find("&cursor=") then
+                        local a = gamelink:find("&cursor=")
+                        local b = gamelink:sub(a)
+                        gamelink = gamelink:gsub(b, "")
+                    end
+                    gamelink = gamelink .. "&cursor=" ..v
+                    getservers()
+                end
+            end
+        end 
+        getservers()
+        if AutoTeleport then
+            if DontTeleportTheSameNumber then 
+                if #game:GetService("Players"):GetPlayers() - 4  == maxplayers then
+                    return warn("It has same number of players (except you)")
+                elseif goodserver == game.JobId then
+                    return warn("Your current server is the most empty server atm") 
+                end
+            end
+            game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, goodserver)
+        end
+    end)
+    
+    Status:AddButton("Copy Job Id",function()
+	setclipboard(tostring(game.JobId))
+	end)
+	
+    Status:AddTextbox("Place Job Id", true, function(value)
+	_G.Job = value
+	end)
+
+	Status:AddButton("Join Sever [BETA]",function()
+	game:GetService("TeleportService"):TeleportToPlaceInstance(game.placeId,_G.Job, game.Players.LocalPlayer)
+	end)
+
+	Status:AddToggle("Auto Rejoin",true,function(value)
+		_G.AutoRejoin = value
+	end)
+
+	spawn(function()
+	    while wait() do
+	        if _G.AutoRejoin then
+	                getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(child)
+                        if child.Name == 'ErrorPrompt' and child:FindFirstChild('MessageArea') and child.MessageArea:FindFirstChild("ErrorFrame") then
+                            game:GetService("TeleportService"):Teleport(game.PlaceId)
+                        end
+                     end)
+	            end
+	        end
+	    end)
+	
 FrozenIsland = Status:AddLabel("N/A")
 
 Status:AddSeperator("Bone")
@@ -14992,301 +15102,15 @@ end)
 
 ColorHaki = Status:AddLabel("N/A")
 
-Status:AddSeperator("Player")
-    
-    local locallv = Status:AddLabel("Level")
-    
-    spawn(function()
-        while wait() do
-            pcall(function()
-                locallv:Set("Level:".." "..game:GetService("Players").LocalPlayer.Data.Level.Value)
-            end)
-        end
-    end)
-    
-    local localrace = Status:AddLabel("Race")
-    
-    spawn(function()
-        while wait() do
-            pcall(function()
-                localrace:Set("Race:".." "..game:GetService("Players").LocalPlayer.Data.Race.Value)
-            end)
-        end
-    end)
-    
-    local localbeli = Status:AddLabel("Beli")
-    
-    spawn(function()
-        while wait() do
-            pcall(function()
-                localbeli:Set("Beli:".." "..game:GetService("Players").LocalPlayer.Data.Beli.Value)
-            end)
-        end
-    end)
-    
-    local localfrag = Status:AddLabel("Fragment")
-    
-    spawn(function()
-        while wait() do
-            pcall(function()
-                localfrag:Set("Fragments:".." "..game:GetService("Players").LocalPlayer.Data.Fragments.Value)
-            end)
-        end
-    end)
-    
-    
-    local localexp = Status:AddLabel("ExP")
-    
-    spawn(function()
-        while wait() do
-            pcall(function()
-                localexp:Set("ExP Points:".." "..game:GetService("Players").LocalPlayer.Data.Exp.Value)
-            end)
-        end
-    end)
-    
-    local localstat = Status:AddLabel("Stats Points")
-    
-    spawn(function()
-        while wait() do
-            pcall(function()
-                localstat:Set("Stats Points:".." "..game:GetService("Players").LocalPlayer.Data.Points.Value)
-            end)
-        end
-    end)
-    
-    local localbountyhornor = Status:AddLabel("Bounty")
-    
-    spawn(function()
-        while wait() do
-            pcall(function()
-                localbountyhornor:Set("Bounty / Honor:".." "..game:GetService("Players").LocalPlayer.leaderstats["Bounty/Honor"].Value)
-            end)
-        end
-    end)
-    
-    local localDevil = Status:AddLabel("Devil Fruit")
-    
-    spawn(function()
-        while wait() do
-            pcall(function()
-                if game:GetService("Players").LocalPlayer.Character:FindFirstChild(game:GetService("Players").LocalPlayer.Data.DevilFruit.Value) or game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(game:GetService("Players").LocalPlayer.Data.DevilFruit.Value) then
-                    localDevil:Set("Devil Fruit:".." "..game:GetService("Players").LocalPlayer.Data.DevilFruit.Value)
-                else
-                    localDevil:Set("Not Have Devil Fruit")
-                end
-            end)
-        end
-    end)
-
-Status:AddSeperator(" Sword ")
-
-local Saber = Status:AddLabel("❌: Saber")
-local Rengoku = Status:AddLabel("❌: Rengoku")
-local Midnight_Blade = Status:AddLabel("❌: Midnight Blade")
-local Dragon_Trident = Status:AddLabel("❌: Dragon Trident")
-local Yama = Status:AddLabel("❌: Yama")
-local Buddy_Sword = Status:AddLabel("❌: Buddy Sword")
-local Canvander = Status:AddLabel("❌: Canvander")
-local Twin_Hooks = Status:AddLabel("❌: Twin Hooks")
-local Spikey_Trident = Status:AddLabel("❌: Spikey Trident")
-local Hallow_Scythe = Status:AddLabel("❌: Hallow Scythe")
-local Dark_Dagger = Status:AddLabel("❌: Dark Dagger")
-local Tushita = Status:AddLabel("❌: Tushita")
-
-spawn(function()
-    while task.wait() do
-        pcall(function()
-            for i,v in pairs(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")) do
-                if v.Name == "Saber" then
-                    Saber:Set("✅: Saber")
-                end
-                if v.Name == "Rengoku" then
-                    Rengoku:Set("✅: Rengoku")
-                end
-                if v.Name == "Midnight Blade" then
-                    Midnight_Blade:Set("✅: Midnight Blade")
-                end
-                if v.Name == "Dragon Trident" then
-                    Dragon_Trident:Set("✅: Dragon Trident")
-                end
-                if v.Name == "Yama" then
-                    Yama:Set("✅: Yama")
-                end
-                if v.Name == "Buddy Sword" then
-                    Buddy_Sword:Set("✅: Buddy Sword")
-                end
-                if v.Name == "Canvander" then
-                    Canvander:Set("✅: Canvander")
-                end
-                if v.Name == "Twin Hooks" then
-                    Twin_Hooks:Set("✅: Twin Hooks")
-                end
-                if v.Name == "Spikey Trident" then
-                    Spikey_Trident:Set("✅: Spikey Trident")
-                end
-                if v.Name == "Hallow Scythe" then
-                    Hallow_Scythe:Set("✅: Hallow Scythe")
-                end
-                if v.Name == "Dark Dagger" then
-                    Dark_Dagger:Set("✅: Dark Dagger")
-                end
-                if v.Name == "Tushita" then
-                    Tushita:Set("✅: Tushita")
-                 end
-            end
-        end)
-    end
-end)
-
-Status:AddSeperator("Quest")
-
-local Bartilo_Quest = Status:AddLabel("❌: Bartilo Quest")
-local Don_Swan_Quest = Status:AddLabel("❌: Don Swan Quest")
-local Kill_Don_Swan = Status:AddLabel("❌: Kill Don Swan")
-
-spawn(function()
-    while task.wait() do
-        if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 3 then
-            Bartilo_Quest:Set("✅: Bartilo Quest")
-        end
-
-        if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("GetUnlockables").FlamingoAccess == nil then
-            --Nothing
-        else
-            Don_Swan_Quest:Set("✅: Don Swan Quest")
-        end
-
-        if game:GetService("ReplicatedStorage").Remotes["CommF_"]:InvokeServer("ZQuestProgress", "Check") == 1 then
-            Kill_Don_Swan:Set("✅: Kill Don Swan")
-        end
-    end
-end)
-
-Status:AddSeperator("Sword Legendary")
-
-local Shisui = Status:AddLabel("❌: Shisui")
-local Saddi = Status:AddLabel("❌: Saddi")
-local Wando = Status:AddLabel("❌: Wando")
-local True_Triple_Katana = Status:AddLabel("❌: True Triple Katana")
-
-spawn(function()
-    while task.wait() do
-        pcall(function()
-            for i,v in pairs(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")) do
-                if v.Name == "Shisui" then
-                    Shisui:Set("✅: Shisui")
-                end
-                if v.Name == "Saddi" then
-                    Saddi:Set("✅: Saddi")
-                end
-                if v.Name == "Wando" then
-                    Wando:Set("✅: Wando")
-                end
-                if v.Name == "True Triple Katana" then
-                    True_Triple_Katana:Set("✅: True Triple Katana")
-                end
-            end
-        end)
-    end
-end)
-
-Status:AddSeperator("Melee")
-
-local Superhuman = Status:AddLabel("❌: Superhuman")
-local Death_Step = Status:AddLabel("❌: Death Step")
-local Sharkman_Karate = Status:AddLabel("❌: Sharkman Karate")
-local Electric_Claw = Status:AddLabel("❌: Electric Claw")
-local Dragon_Talon = Status:AddLabel("❌: Dragon Talon")
-local God_Human = Status:AddLabel("❌: God Human")
-
-spawn(function()
-    while task.wait() do
-        if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman",true) == 1 then
-            Superhuman:Set("✅: Superhuman")
-        end
-        if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep",true) == 1 then
-            Death_Step:Set("✅: Death Step")
-        end
-        if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate",true) == 1 then
-            Sharkman_Karate:Set("✅: Sharkman Karate")
-        end
-        if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectricClaw",true) == 1 then
-            Electric_Claw:Set("✅: Electric Claw")
-        end
-        if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon",true) == 1 then
-            Dragon_Talon:Set("✅: Dragon Talon")
-        end
-    end
-end)
-
-Status:AddSeperator("Gun")
-
-local Kabu_cha = Status:AddLabel("❌: Kabucha")
-local Acidum_Rifle = Status:AddLabel("❌: Acidum Rifle")
-local Bizarre_Rifle = Status:AddLabel("❌: Bizarre Rifle")
-
-spawn(function()
-    while task.wait() do
-        pcall(function()
-            for i,v in pairs(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")) do
-                if v.Name == "Kabucha" then
-                    Kabu_cha:Set("✅: Kabucha")
-                end
-                if v.Name == "Acidum Rifle" then
-                    Acidum_Rifle:Set("✅: Acidum Rifle")
-                end
-                if v.Name == "Bizarre Rifle" then
-                    Bizarre_Rifle:Set("✅: Bizarre Rifle")
-                end
-            end
-        end)
-    end
-end)
-
-
-
-Status:AddSeperator("Accessory")
-
-local Dark_Coat = Status:AddLabel("❌: Dark Coat")
-local Ghoul_Mask = Status:AddLabel("❌: Ghoul Mask")
-local Swan_Glass = Status:AddLabel("❌: Swan Glass")
-local Pale_Scarf = Status:AddLabel("❌: Pale Scarf")
-local Valkyrie_Helm = Status:AddLabel("❌: Valkyrie Helm")
-
-
-spawn(function()
-    while task.wait() do
-        pcall(function()
-            for i,v in pairs(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")) do
-                if v.Name == "Saber" then
-                    Dark_Coat:Set("✅: Dark Coat")
-                end
-                if v.Name == "Ghoul Mask" then
-                    Ghoul_Mask:Set("✅: Ghoul Mask")
-                end
-                if v.Name == "Swan Glasses" then
-                    Swan_Glass:Set("✅: Swan Glass")
-                end
-                if v.Name == "Pale Scarf" then
-                    Pale_Scarf:Set("✅: Pale Scarf")
-                end
-                if v.Name == "Valkyrie Helmet" then
-                    Valkyrie_Helm:Set("✅: Valkyrie Helmet")
-                end
-            end
-        end)
-    end
-end)
 
 -------------------------------------------------------------------------------------------------------- 
     local TimeRaid = R:AddLabel("Wait For Dungeon")
     
-    local Island1 = R:AddLabel(": lsland 1")
-    local Island2 = R:AddLabel(": lsland 2")
-    local Island3 = R:AddLabel(": lsland 3")
-    local Island4 = R:AddLabel(": lsland 4")
-    local Island5 = R:AddLabel(": lsland 5")
+    local Island1 = R:AddLabel(": lsland 🟢")
+    local Island2 = R:AddLabel(": lsland 🟢")
+    local Island3 = R:AddLabel(": lsland 🟢")
+    local Island4 = R:AddLabel(": lsland 🟢")
+    local Island5 = R:AddLabel(": lsland 🟢")
     
     R:AddLine()
     
@@ -17286,58 +17110,58 @@ One:AddSeperator("Player")
     end)
 
 
-local Saber = One:AddLabel("❌: Saber")
-local Rengoku = One:AddLabel("❌: Rengoku")
-local Midnight_Blade = One:AddLabel("❌: Midnight Blade")
-local Dragon_Trident = One:AddLabel("❌: Dragon Trident")
-local Yama = One:AddLabel("❌: Yama")
-local Buddy_Sword = One:AddLabel("❌: Buddy Sword")
-local Canvander = One:AddLabel("❌: Canvander")
-local Twin_Hooks = One:AddLabel("❌: Twin Hooks")
-local Spikey_Trident = One:AddLabel("❌: Spikey Trident")
-local Hallow_Scythe = One:AddLabel("❌: Hallow Scythe")
-local Dark_Dagger = One:AddLabel("❌: Dark Dagger")
-local Tushita = One:AddLabel("❌: Tushita")
+local Saber = One:AddLabel("Saber 🔴")
+local Rengoku = One:AddLabel("Rengoku 🔴")
+local Midnight_Blade = One:AddLabel("Midnight Blade 🔴")
+local Dragon_Trident = One:AddLabel("Dragon Trident 🔴")
+local Yama = One:AddLabel("Yama")
+local Buddy_Sword = One:AddLabel("Buddy Sword 🔴")
+local Canvander = One:AddLabel("Canvander 🔴")
+local Twin_Hooks = One:AddLabel("Twin Hooks 🔴")
+local Spikey_Trident = One:AddLabel("Spikey Trident 🔴")
+local Hallow_Scythe = One:AddLabel("Hallow Scythe 🔴")
+local Dark_Dagger = One:AddLabel("Dark Dagger 🔴")
+local Tushita = One:AddLabel("Tushita 🔴")
 
 spawn(function()
     while task.wait() do
         pcall(function()
             for i,v in pairs(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")) do
                 if v.Name == "Saber" then
-                    Saber:Set("✅: Saber")
+                    Saber:Set("Saber 🟢")
                 end
                 if v.Name == "Rengoku" then
-                    Rengoku:Set("✅: Rengoku")
+                    Rengoku:Set("Rengoku 🟢")
                 end
                 if v.Name == "Midnight Blade" then
-                    Midnight_Blade:Set("✅: Midnight Blade")
+                    Midnight_Blade:Set("Midnight Blade 🟢")
                 end
                 if v.Name == "Dragon Trident" then
-                    Dragon_Trident:Set("✅: Dragon Trident")
+                    Dragon_Trident:Set("Dragon Trident 🟢")
                 end
                 if v.Name == "Yama" then
-                    Yama:Set("✅: Yama")
+                    Yama:Set("Yama 🟢")
                 end
                 if v.Name == "Buddy Sword" then
-                    Buddy_Sword:Set("✅: Buddy Sword")
+                    Buddy_Sword:Set("Buddy Sword 🟢")
                 end
                 if v.Name == "Canvander" then
-                    Canvander:Set("✅: Canvander")
+                    Canvander:Set("Canvander 🟢")
                 end
                 if v.Name == "Twin Hooks" then
-                    Twin_Hooks:Set("✅: Twin Hooks")
+                    Twin_Hooks:Set("Twin Hooks 🟢")
                 end
                 if v.Name == "Spikey Trident" then
-                    Spikey_Trident:Set("✅: Spikey Trident")
+                    Spikey_Trident:Set("Spikey Trident 🟢")
                 end
                 if v.Name == "Hallow Scythe" then
-                    Hallow_Scythe:Set("✅: Hallow Scythe")
+                    Hallow_Scythe:Set("Hallow Scythe 🟢")
                 end
                 if v.Name == "Dark Dagger" then
-                    Dark_Dagger:Set("✅: Dark Dagger")
+                    Dark_Dagger:Set("Dark Dagger 🟢")
                 end
                 if v.Name == "Tushita" then
-                    Tushita:Set("✅: Tushita")
+                    Tushita:Set("Tushita 🟢")
                  end
             end
         end)
@@ -17345,49 +17169,49 @@ spawn(function()
 end)
 
 
-local Bartilo_Quest = One:AddLabel("❌: Bartilo Quest")
-local Don_Swan_Quest = One:AddLabel("❌: Don Swan Quest")
-local Kill_Don_Swan = One:AddLabel("❌: Kill Don Swan")
+local Bartilo_Quest = One:AddLabel("Bartilo Quest 🔴")
+local Don_Swan_Quest = One:AddLabel("Don Swan Quest 🔴")
+local Kill_Don_Swan = One:AddLabel("Kill Don Swan 🔴")
 
 spawn(function()
     while task.wait() do
         if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 3 then
-            Bartilo_Quest:Set("✅: Bartilo Quest")
+            Bartilo_Quest:Set("Bartilo Quest 🟢")
         end
 
         if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("GetUnlockables").FlamingoAccess == nil then
             --Nothing
         else
-            Don_Swan_Quest:Set("✅: Don Swan Quest")
+            Don_Swan_Quest:Set("Don Swan Quest 🟢")
         end
 
         if game:GetService("ReplicatedStorage").Remotes["CommF_"]:InvokeServer("ZQuestProgress", "Check") == 1 then
-            Kill_Don_Swan:Set("✅: Kill Don Swan")
+            Kill_Don_Swan:Set("Kill Don Swan 🟢")
         end
     end
 end)
 
 
-local Shisui = One:AddLabel("❌: Shisui")
-local Saddi = One:AddLabel("❌: Saddi")
-local Wando = One:AddLabel("❌: Wando")
-local True_Triple_Katana = One:AddLabel("❌: True Triple Katana")
+local Shisui = One:AddLabel("Shisui 🔴")
+local Saddi = One:AddLabel("Saddi 🔴")
+local Wando = One:AddLabel("Wando 🔴")
+local True_Triple_Katana = One:AddLabel("True Triple Katana 🔴")
 
 spawn(function()
     while task.wait() do
         pcall(function()
             for i,v in pairs(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")) do
                 if v.Name == "Shisui" then
-                    Shisui:Set("✅: Shisui")
+                    Shisui:Set("Shisui 🟢")
                 end
                 if v.Name == "Saddi" then
-                    Saddi:Set("✅: Saddi")
+                    Saddi:Set("Saddi 🟢")
                 end
                 if v.Name == "Wando" then
-                    Wando:Set("✅: Wando")
+                    Wando:Set("Wando 🟢")
                 end
                 if v.Name == "True Triple Katana" then
-                    True_Triple_Katana:Set("✅: True Triple Katana")
+                    True_Triple_Katana:Set("True Triple Katana 🟢")
                 end
             end
         end)
@@ -17396,50 +17220,53 @@ end)
 
 Status:AddSeperator("Melee")
 
-local Superhuman = One:AddLabel("❌: Superhuman")
-local Death_Step = One:AddLabel("❌: Death Step")
-local Sharkman_Karate = One:AddLabel("❌: Sharkman Karate")
-local Electric_Claw = One:AddLabel("❌: Electric Claw")
-local Dragon_Talon = One:AddLabel("❌: Dragon Talon")
-local God_Human = One:AddLabel("❌: God Human")
+local Superhuman = One:AddLabel("Superhuman 🔴")
+local Death_Step = One:AddLabel("Death Step 🔴")
+local Sharkman_Karate = One:AddLabel("Sharkman Karate 🔴")
+local Electric_Claw = One:AddLabel("Electric Claw 🔴")
+local Dragon_Talon = One:AddLabel("Dragon Talon 🔴")
+local God_Human = One:AddLabel("God Human 🔴")
 
 spawn(function()
     while task.wait() do
         if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman",true) == 1 then
-            Superhuman:Set("✅: Superhuman")
+            Superhuman:Set("Superhuman 🟢")
         end
         if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep",true) == 1 then
-            Death_Step:Set("✅: Death Step")
+            Death_Step:Set("Death Step 🟢")
         end
         if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate",true) == 1 then
-            Sharkman_Karate:Set("✅: Sharkman Karate")
+            Sharkman_Karate:Set("Sharkman Karate 🟢")
         end
         if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectricClaw",true) == 1 then
-            Electric_Claw:Set("✅: Electric Claw")
+            Electric_Claw:Set("Electric Claw 🟢")
         end
         if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon",true) == 1 then
-            Dragon_Talon:Set("✅: Dragon Talon")
+            Dragon_Talon:Set("Dragon Talon 🟢")
+        end
+        if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGod Human",true) == 1 then
+            Electric_Claw:Set("God Human 🟢")
         end
     end
 end)
 
 
-local Kabu_cha = One:AddLabel("❌: Kabucha")
-local Acidum_Rifle = One:AddLabel("❌: Acidum Rifle")
-local Bizarre_Rifle = One:AddLabel("❌: Bizarre Rifle")
+local Kabu_cha = One:AddLabel("Kabucha 🔴")
+local Acidum_Rifle = One:AddLabel("Acidum Rifle 🔴")
+local Bizarre_Rifle = One:AddLabel("Bizarre Rifle 🔴")
 
 spawn(function()
     while task.wait() do
         pcall(function()
             for i,v in pairs(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")) do
                 if v.Name == "Kabucha" then
-                    Kabu_cha:Set("✅: Kabucha")
+                    Kabu_cha:Set("Kabucha 🟢")
                 end
-                if v.Name == "Acidum Rifle" then
-                    Acidum_Rifle:Set("✅: Acidum Rifle")
+                if v.Name == "Acidum Rifle 🟢" then
+                    Acidum_Rifle:Set("Acidum Rifle 🟢")
                 end
                 if v.Name == "Bizarre Rifle" then
-                    Bizarre_Rifle:Set("✅: Bizarre Rifle")
+                    Bizarre_Rifle:Set("Bizarre Rifle 🟢")
                 end
             end
         end)
@@ -17449,11 +17276,11 @@ end)
 
 
 
-local Dark_Coat = One:AddLabel("❌: Dark Coat")
-local Ghoul_Mask = One:AddLabel("❌: Ghoul Mask")
-local Swan_Glass = One:AddLabel("❌: Swan Glass")
-local Pale_Scarf = One:AddLabel("❌: Pale Scarf")
-local Valkyrie_Helm = One:AddLabel("❌: Valkyrie Helm")
+local Dark_Coat = One:AddLabel("Dark Coat 🔴")
+local Ghoul_Mask = One:AddLabel("Ghoul Mask 🔴")
+local Swan_Glass = One:AddLabel("Swan Glass 🔴")
+local Pale_Scarf = One:AddLabel("Pale Scarf 🔴")
+local Valkyrie_Helm = One:AddLabel("Valkyrie Helm 🔴")
 
 
 spawn(function()
@@ -17461,130 +17288,35 @@ spawn(function()
         pcall(function()
             for i,v in pairs(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")) do
                 if v.Name == "Saber" then
-                    Dark_Coat:Set("✅: Dark Coat")
+                    Dark_Coat:Set("Dark Coat 🟢")
                 end
                 if v.Name == "Ghoul Mask" then
-                    Ghoul_Mask:Set("✅: Ghoul Mask")
+                    Ghoul_Mask:Set("Ghoul Mask 🟢")
                 end
                 if v.Name == "Swan Glasses" then
-                    Swan_Glass:Set("✅: Swan Glass")
+                    Swan_Glass:Set("Swan Glass 🟢")
                 end
                 if v.Name == "Pale Scarf" then
-                    Pale_Scarf:Set("✅: Pale Scarf")
+                    Pale_Scarf:Set("Pale Scarf 🟢")
                 end
                 if v.Name == "Valkyrie Helmet" then
-                    Valkyrie_Helm:Set("✅: Valkyrie Helmet")
+                    Valkyrie_Helm:Set("Valkyrie Helmet 🟢")
                 end
             end
         end)
     end
 end)
 
---------------------------------------------------------------------------------------------------------
-    G:AddSeperator("Game-Server")
-    
-    spawn(function()
-        while wait() do
-            pcall(function()
-                JobID:Set("Job ID:".." "..game.JobId)
-            end)
-        end
-    end)
-    
-    JobID = GAddLabel("Job ID: ")
-    
-    G:AddButton("Rejoin Server",function()
-        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-    end)
-    
-    G:AddButton("Server Hop",function()
-        Hop()
-    end)
-    
-    G:AddButton("Hop To Lower Player",function()
-        getgenv().AutoTeleport = true
-        getgenv().DontTeleportTheSameNumber = true 
-        getgenv().CopytoClipboard = false
-        if not game:IsLoaded() then
-            print("Game is loading waiting...")
-        end
-        local maxplayers = math.huge
-        local serversmaxplayer;
-        local goodserver;
-        local gamelink = "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100" 
-        function serversearch()
-            for _, v in pairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync(gamelink)).data) do
-                if type(v) == "table" and v.playing ~= nil and maxplayers > v.playing then
-                    serversmaxplayer = v.maxPlayers
-                    maxplayers = v.playing
-                    goodserver = v.id
-                end
-            end       
-        end
-        function getservers()
-            serversearch()
-            for i,v in pairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync(gamelink))) do
-                if i == "nextPageCursor" then
-                    if gamelink:find("&cursor=") then
-                        local a = gamelink:find("&cursor=")
-                        local b = gamelink:sub(a)
-                        gamelink = gamelink:gsub(b, "")
-                    end
-                    gamelink = gamelink .. "&cursor=" ..v
-                    getservers()
-                end
-            end
-        end 
-        getservers()
-        if AutoTeleport then
-            if DontTeleportTheSameNumber then 
-                if #game:GetService("Players"):GetPlayers() - 4  == maxplayers then
-                    return warn("It has same number of players (except you)")
-                elseif goodserver == game.JobId then
-                    return warn("Your current server is the most empty server atm") 
-                end
-            end
-            game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, goodserver)
-        end
-    end)
-    
-    G:AddButton("Copy Job Id",function()
-	setclipboard(tostring(game.JobId))
-	end)
-	
-    G:AddTextbox("Place Job Id", true, function(value)
-	_G.Job = value
-	end)
-
-	G:AddButton("Join Sever [BETA]",function()
-	game:GetService("TeleportService"):TeleportToPlaceInstance(game.placeId,_G.Job, game.Players.LocalPlayer)
-	end)
-
-	G:AddToggle("Auto Rejoin",true,function(value)
-		_G.AutoRejoin = value
-	end)
-
-	spawn(function()
-	    while wait() do
-	        if _G.AutoRejoin then
-	                getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(child)
-                        if child.Name == 'ErrorPrompt' and child:FindFirstChild('MessageArea') and child.MessageArea:FindFirstChild("ErrorFrame") then
-                            game:GetService("TeleportService"):Teleport(game.PlaceId)
-                        end
-                     end)
-	            end
-	        end
-	    end)
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-Notification.Notify("Notification", "Thank You For Using HUNTER X HUB", "rbxassetid://18804983248", {
+Notification.Notify("Notification", "Thank You For Using HUNTER X HUB", "rbxassetid://18915600398", {
     Duration = 5,       
     Main = {
         Rounding = true,
     }
     });
 wait(6)
-Notification.Notify("Notification", "If You Use Fluxus HUNTER X HUB Will Very Good", "rbxassetid://18804983248", {
+Notification.Notify("Notification", "If You Use Fluxus HUNTER X HUB Will Very Good", "rbxassetid://18915600398", {
     Duration = 10,       
     Main = {
         Rounding = true,
