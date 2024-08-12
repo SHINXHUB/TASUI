@@ -1,0 +1,187 @@
+_G.Color = Color3.fromRGB(255, 255, 255)
+
+function Notification(text)
+game.StarterGui:SetCore("SendNotification", {
+  Title = "Copied!", -- the title (ofc)
+  Text = text, -- what the text says (ofc)
+  Icon = "rbxassetid://18915600398", -- the image if u want.
+  Duration = 3 -- how long the notification should in secounds
+})
+end
+
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Mouse = LocalPlayer:GetMouse()
+
+function CircleClick(Button, X, Y)
+coroutine.resume(
+  coroutine.create(
+    function()
+    local Circle = Instance.new("ImageLabel")
+    Circle.Parent = Button
+    Circle.Name = "Circle"
+    Circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Circle.BackgroundTransparency = 1.000
+    Circle.ZIndex = 10
+    Circle.Image = "rbxassetid://18915600398"
+    Circle.ImageColor3 = Color3.fromRGB(255, 255, 255)
+    Circle.ImageTransparency = 0.7
+    local NewX = X - Circle.AbsolutePosition.X
+    local NewY = Y - Circle.AbsolutePosition.Y
+    Circle.Position = UDim2.new(0, NewX, 0, NewY)
+
+    local Time = 0.2
+    Circle:TweenSizeAndPosition(
+      UDim2.new(0, 30.25, 0, 30.25),
+      UDim2.new(0, NewX - 15, 0, NewY - 10),
+      "Out",
+      "Quad",
+      Time,
+      false,
+      nil
+    )
+    for i = 1, 10 do
+    Circle.ImageTransparency = Circle.ImageTransparency + 0.01
+    wait(Time / 10)
+    end
+    Circle:Destroy()
+    end
+  )
+)
+end
+
+local UI = Instance.new("ScreenGui")
+UI.Name = "UI"
+UI.Parent = game.CoreGui:WaitForChild("RobloxGui"):WaitForChild("Modules")
+UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+local StatusFrame = Instance.new("Frame")
+StatusFrame.Name = "StatusFrame"
+StatusFrame.Parent = UI
+StatusFrame.BackgroundColor3 = Color3.fromRGB(11, 12, 13)
+StatusFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+StatusFrame.Size = UDim2.new(0, 0, 0, 0)
+StatusFrame.ClipsDescendants = true
+StatusFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+
+StatusFrame:TweenSize(UDim2.new(0,200,0,130),"Out","Quad",0.4,true)
+
+local SettingCornerrr = Instance.new("UICorner")
+SettingCornerrr.CornerRadius = UDim.new(0, 10)
+SettingCornerrr.Name = "SettingCornerrr"
+SettingCornerrr.Parent = StatusFrame
+
+local StaminaText = Instance.new("TextLabel")
+StaminaText.Name = "StaminaText"
+StaminaText.Parent = StatusFrame
+StaminaText.Active = true
+StaminaText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StaminaText.BackgroundTransparency = 1.000
+StaminaText.Position = UDim2.new(0.0260000005, 0, 0.00000001, 0)
+StaminaText.Size = UDim2.new(0, 200, 0, 22)
+StaminaText.Font = Enum.Font.GothamBold
+StaminaText.Text = "❗HUNTER X HUB INFO ❗"
+StaminaText.TextColor3 = Color3.fromRGB(255, 0, 0)
+StaminaText.TextSize = 12.000
+StaminaText.TextWrapped = true
+StaminaText.TextXAlignment = Enum.TextXAlignment.Center
+
+local Message = Instance.new("TextLabel")
+Message.Name = "Message"
+Message.Parent = StatusFrame
+Message.Active = true
+Message.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Message.BackgroundTransparency = 1.000
+Message.Position = UDim2.new(0.020000005, 0, 0.24000001, 0)
+Message.Size = UDim2.new(0, 190, 0, 22)
+Message.Font = Enum.Font.GothamBold
+Message.Text = "🚨 SCRIPT HAS BEEN UPDATED! 🚨\n PLEASE JOIN HUNTER X HUB SERVER\nTO GET NEW SCRIPT!"
+Message.TextColor3 = Color3.fromRGB(0, 255, 0)
+Message.TextSize = 12.000
+Message.TextWrapped = false
+Message.TextXAlignment = Enum.TextXAlignment.Center
+
+local UiStatus = Instance.new("UIStroke")
+UiStatus.Thickness = 1
+UiStatus.Parent = StatusFrame
+UiStatus.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UiStatus.LineJoinMode = Enum.LineJoinMode.Round
+UiStatus.Color = _G.Color
+UiStatus.Transparency = 0.10
+
+local Butn2 = Instance.new("Frame")
+local Ui2 = Instance.new("UICorner")
+local Text2 = Instance.new("TextLabel")
+local Textbtn2 = Instance.new("TextButton")
+
+Butn2.Name = "Butn2"
+Butn2.Parent = StatusFrame
+Butn2.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
+Butn2.Size = UDim2.new(0, 180, 0, 30)
+Butn2.Position = UDim2.new(0, 10, 0, 80)
+Butn2.ZIndex = 16
+
+Ui2.CornerRadius = UDim.new(0, 4)
+Ui2.Parent = Butn2
+
+Text2.Parent = Butn2
+Text2.AnchorPoint = Vector2.new(0.5, 0.5)
+Text2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text2.BackgroundTransparency = 1.000
+Text2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Text2.Size = UDim2.new(0, 40, 0, 12)
+Text2.ZIndex = 16
+Text2.Font = Enum.Font.GothamBold
+Text2.Text = "Join HUNTER X HUB Discord!"
+Text2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text2.TextSize = 14.000
+
+Textbtn2.Parent = Butn2
+Textbtn2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Textbtn2.BackgroundTransparency = 1.000
+Textbtn2.BorderSizePixel = 0
+Textbtn2.ClipsDescendants = true
+Textbtn2.Size = UDim2.new(1, 0, 1, 0)
+Textbtn2.ZIndex = 16
+Textbtn2.AutoButtonColor = false
+Textbtn2.Font = Enum.Font.Gotham
+Textbtn2.Text = ""
+Textbtn2.TextColor3 = Color3.fromRGB(178, 102, 255)
+Textbtn2.TextSize = 14.000
+
+Textbtn2.MouseEnter:Connect(function()
+  TweenService:Create(
+    Butn2,
+    TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
+    {
+      BackgroundTransparency = 0.5
+    }
+  ):Play()
+  end)
+
+Textbtn2.MouseLeave:Connect(function()
+  TweenService:Create(
+    Butn2,
+    TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
+    {
+      BackgroundTransparency = 0
+    }
+  ):Play()
+  end)
+
+Textbtn2.MouseButton1Click:Connect(function()
+  CircleClick(Butn2, Mouse.X, Mouse.Y)
+  Text2.TextSize = 0
+  TweenService:Create(
+    Text2,
+    TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
+    {
+      TextSize = 12
+    }
+  ):Play()
+Notification("Paste it in Chrome")
+setclipboard("https://discord.com/invite/EKmZy8Cb")
+  end)
+
