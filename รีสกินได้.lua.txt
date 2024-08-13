@@ -3633,23 +3633,14 @@ elseif _G.WhiteScreen == false then
     })
     
     ST:AddToggle({
-        Name = "auto bật  v4",
-        Default = false,
-        Callback = function(Value)
-        AutoAwakeningRace = Value
-        end    
-    })
-spawn(function()
-    while wait() do
-        pcall(function()
-            if _G.V4 then
-                game:GetService("VirtualInputManager"):SendKeyEvent(true,"Y",false,game)
-                wait(0.1)
-                game:GetService("VirtualInputManager"):SendKeyEvent(false,"Y",false,game)
-            end
-        end)
-    end
-end)
+    Name = "Tự động tộc v3",
+    Default = false,
+    Flag = "Tự động Turn On Race v3",
+    Save = true,
+    Callback = function(Value)
+        _G.V3 = Value
+    end    
+})
 spawn(function()
     while wait() do
         pcall(function()
@@ -3657,6 +3648,26 @@ spawn(function()
                 game:GetService("VirtualInputManager"):SendKeyEvent(true,"T",false,game)
                 wait(0.1)
                 game:GetService("VirtualInputManager"):SendKeyEvent(false,"T",false,game)
+            end
+        end)
+    end
+end)
+ST:AddToggle({
+    Name = "Tự động tộc v4",
+    Default = false,
+    Flag = "Tự động Turn On Race v4",
+    Save = true,
+    Callback = function(Value)
+        _G.V4 = Value
+    end    
+})
+spawn(function()
+    while wait() do
+        pcall(function()
+            if _G.V4 then
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,"Y",false,game)
+                wait(0.1)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,"Y",false,game)
             end
         end)
     end
