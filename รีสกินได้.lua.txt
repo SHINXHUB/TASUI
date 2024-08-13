@@ -2541,20 +2541,20 @@ spawn(function()
 end)
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "infinite hub", HidePremium = false, IntroText = "infinite hub⚜️", SaveConfig = true, ConfigFolder = "NightHub"})
+local Window = OrionLib:MakeWindow({Name = "HUNTER X HUB", HidePremium = false, IntroText = "HUNTER X HUB", SaveConfig = true, ConfigFolder = "HUNTER X HUB"})
 
 
 
 OrionLib:MakeNotification({
-    Name = "infinite hub",
+    Name = "HUNTER X HUB",
     Content = "Please Wait loading script...,Do not enable any function",
     Image = "rbxassetid://8192162908",
     Time = 5
 })
 wait(3)
 OrionLib:MakeNotification({
-    Name = "infinite hub",
-    Content = "đợi hub load config rồi mới sài nha",
+    Name = "HUNTER X HUB",
+    Content = "Done",
     Image = "rbxassetid://8192162908",
     Time = 10
 })
@@ -2562,37 +2562,37 @@ OrionLib:MakeNotification({
 -------------Tab-----------------------
 
 local W = Window:MakeTab({
-    Name = "Thông Tin Hubℹ️",
+    Name = "info",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local M = Window:MakeTab({
-    Name = "FARM",
+    Name = "Main Auto Farm",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local ST = Window:MakeTab({
-    Name = "⚙️CÀI ĐẶT",
+    Name = "Setting",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local IQ = Window:MakeTab({
-    Name = "⚔️ Item & Quest",
+    Name = "SubFarming",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local S = Window:MakeTab({
-    Name = "📈 CHỈ SỐ",
+    Name = "📈 INDEX",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local E = Window:MakeTab({
-    Name = "ĐỊNH VỊ",
+    Name = "POSITIONING",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
@@ -2604,43 +2604,43 @@ local RA = Window:MakeTab({
 })
 
 local LC = Window:MakeTab({
-    Name = "🙆‍♂️ BẢN THÂN",
+    Name = "🙆‍♂️ SELF",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local Wld = Window:MakeTab({
-    Name = "🚪 Teleport",
+    Name = "Travel",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local SV = Window:MakeTab({
-    Name = "📈 thông tin Sever",
+    Name = "📈 Server information",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local D = Window:MakeTab({
-    Name = "🍍 trái ắc quỷ",
+    Name = "🍍 Devil Fruit",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local R = Window:MakeTab({
-    Name = "☣️ tộc V4",
+    Name = "☣️ V4 ",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local SH = Window:MakeTab({
-    Name = "🛒 cửa hàng",
+    Name = "🛒 shop",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local C = Window:MakeTab({
-    Name = "🔰 khác",
+    Name = "🔰 other",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
@@ -2651,7 +2651,7 @@ local Section = W:AddSection({
 })
 
 
-W:AddLabel("infinite hub")
+W:AddLabel("HUNTER X HUB")
 
 local Section = W:AddSection({
     Name = "Update"
@@ -2659,7 +2659,7 @@ local Section = W:AddSection({
 
 
 W:AddLabel("PHÁT TRIỂN BỞI")
-W:AddLabel("infinite hub SCRIPT")
+W:AddLabel("HUNTER X HUB SCRIPT")
 W:AddLabel("Discordinfinite hub")
 local Section = W:AddSection({
     Name = "Status"
