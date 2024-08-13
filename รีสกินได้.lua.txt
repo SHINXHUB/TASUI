@@ -3632,35 +3632,14 @@ elseif _G.WhiteScreen == false then
         end    
     })
     
+
     ST:AddToggle({
-    Name = "Tự động tộc v3",
-    Default = false,
-    Flag = "Tự động Turn On Race v3",
-    Save = true,
-    Callback = function(Value)
-        _G.V3 = Value
-    end    
-})
-spawn(function()
-    while wait() do
-        pcall(function()
-            if _G.V3 then
-                game:GetService("VirtualInputManager"):SendKeyEvent(true,"T",false,game)
-                wait(0.1)
-                game:GetService("VirtualInputManager"):SendKeyEvent(false,"T",false,game)
-            end
-        end)
-    end
-end)
-ST:AddToggle({
-    Name = "Tự động tộc v4",
-    Default = false,
-    Flag = "Tự động Turn On Race v4",
-    Save = true,
-    Callback = function(Value)
-        _G.V4 = Value
-    end    
-})
+        Name = "4",
+        Default = true,
+        Callback = function(Value)
+            _G.V4 = Value
+        end    
+    })
 spawn(function()
     while wait() do
         pcall(function()
