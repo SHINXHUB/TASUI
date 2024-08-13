@@ -2586,7 +2586,7 @@ local IQ = Window:MakeTab({
 })
 
 local S = Window:MakeTab({
-    Name = "📈 INDEX",
+    Name = "Status",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
@@ -2610,7 +2610,7 @@ local LC = Window:MakeTab({
 })
 
 local Wld = Window:MakeTab({
-    Name = "Travel",
+    Name = "Teleport",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
@@ -2658,9 +2658,11 @@ local Section = W:AddSection({
 })
 
 
-W:AddLabel("PHÁT TRIỂN BỞI")
-W:AddLabel("HUNTER X HUB SCRIPT")
-W:AddLabel("Discordinfinite hub")
+W:AddLabel("HUNTER X HUB")
+W:AddLabel("YouTube")
+W:AddLabel("https://www.youtube.com/@hunterx_hub")
+W:AddLabel("Discord")
+W:AddLabel("https://discord.com/invite/EKmZy8Cb")
 local Section = W:AddSection({
     Name = "Status"
 })
@@ -2754,7 +2756,7 @@ local locallv = W:AddLabel("Level")
         Name = "Status Hack"
     })
     
-    local LevelFarmFarm W:AddLabel("Kaitun : Đell có(sắp có)")
+    local LevelFarmFarm W:AddLabel("Kaitun : Dell has (coming soon)")
     W:AddLabel("Config Save : Comming Son...")
     local Farmfast = W:AddLabel("Farm Fast : ❌")
     local Bypass = W:AddLabel("Bypass ❌")
@@ -3142,191 +3144,6 @@ M:AddToggle({
         end    
     })
 
-    local Section = M:AddSection({
-        Name = "Bring Mob"
-    })
-
-M:AddToggle({
-    Name = "Bring Mobs[Fix]",
-    Default = true,
-    Flag = "Bring Mobs",
-    Save = false,
-    Callback = function(Value)
-        _G.BringMonster = Value
-    end    
-})
-local Bring = {"Low", "Normal", "Super Bring"}
-_G.BringMode = "Normal"
-M:AddDropdown({
-    Name = "Bring Mode",
-    Default = "Normal",
-    Options = Bring,
-    Default = false,
-    Flag = "Bring Mode",
-    Save = true,
-    Callback = function(Value)
-        _G.BringMode = Value
-    end    
-})
-spawn(function()
-    while wait(.1) do
-        if _G.BringMode then
-            pcall(function()
-                if _G.BringMode == "Low" then
-                    _G.BringMode = 300
-                elseif _G.BringMode == "Normal" then
-                    _G.BringMode = 375
-                elseif _G.BringMode == "Super Bring" then
-                    _G.BringMode = 450
-                end
-            end)
-        end
-    end
-end)
-
-local Section = M:AddSection({
-    Name = "FastAttack :"
-})
-
-M:AddToggle({
-    Name = "FastAttack",
-    Default = true,
-    Flag = "FastAttack",
-    Save = false,
-    Callback = function(Value)
-        _G.FastAttack = Value
-    end    
-})
-local CameraShaker = require(game.ReplicatedStorage.Util.CameraShaker)
-CombatFrameworkR = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
-y = debug.getupvalues(CombatFrameworkR)[2]
-spawn(function()
-    game:GetService("RunService").RenderStepped:Connect(function()
-        if _G.FastAttack then
-            if typeof(y) == "table" then
-                pcall(function()
-                    CameraShaker:Stop()
-                    y.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
-                    y.activeController.timeToNextAttack = 0
-                    y.activeController.hitboxMagnitude = 60
-                    y.activeController.active = false
-                    y.activeController.timeToNextBlock = 0
-                    y.activeController.focusStart = 1655503339.0980349
-                    y.activeController.increment = 1
-                    y.activeController.blocking = false
-                    y.activeController.attacking = false
-                    y.activeController.humanoid.AutoRotate = true
-                end)
-            end
-        end
-    end)
-end)
-spawn(function()
-    game:GetService("RunService").RenderStepped:Connect(function()
-        if _G.FastAttack == true then
-            game.Players.LocalPlayer.Character.Stun.Value = 0
-            game.Players.LocalPlayer.Character.Busy.Value = false        
-        end
-    end)
-end)
-
-local AttackList = {"0", "0.1", "0.175", "0.2", "0.25", "0.3", "0.35", "0.4", "0.45", "0.5", "0.55", "0.6", "0.65", "0.7", "0.75", "0.8", "0.85", "0.9", "0.95", "0.1"}
-M:AddDropdown({
-	Name = "FastAttack Delay",
-	Default = "0.5",
-	Options = AttackList,
-    Flag = "FastAttack Delay",
-    Save = true,
-	Callback = function(Value)
-		_G.FastAttackDelay = Value
-	end    
-})
-spawn(function()
-    while wait(.1) do
-        if _G.FastAttackDelay then
-            pcall(function()
-                if _G.FastAttackDelay == "0" then
-                    _G.FastAttackDelay = 0
-                elseif _G.FastAttackDelay == "0.1" then
-                    _G.FastAttackDelay = 0.1
-                elseif _G.FastAttackDelay == "0.175" then
-                    _G.FastAttackDelay = 0.175
-                elseif _G.FastAttackDelay == "0.2" then
-                    _G.FastAttackDelay = 0.2
-                elseif _G.FastAttackDelay == "0.25" then
-                    _G.FastAttackDelay = 0.25
-                elseif _G.FastAttackDelay == "0.3" then
-                    _G.FastAttackDelay = 0.3
-                elseif _G.FastAttackDelay == "0.35" then
-                    _G.FastAttackDelay = 0.35
-                elseif _G.FastAttackDelay == "0.4" then
-                    _G.FastAttackDelay = 0.5
-                elseif _G.FastAttackDelay == "0.45" then
-                    _G.FastAttackDelay = 0.45
-                elseif _G.FastAttackDelay == "0.5" then
-                    _G.FastAttackDelay = 0.5
-                elseif _G.FastAttackDelay == "0.55" then
-                    _G.FastAttackDelay = 0.55
-                elseif _G.FastAttackDelay == "0.6" then
-                    _G.FastAttackDelay = 0.6
-                elseif _G.FastAttackDelay == "0.65" then
-                    _G.FastAttackDelay = 0.65
-                elseif _G.FastAttackDelay == "0.7" then
-                    _G.FastAttackDelay = 0.7
-                elseif _G.FastAttackDelay == "0.75" then
-                    _G.FastAttackDelay = 0.75
-                elseif _G.FastAttackDelay == "0.8" then
-                    _G.FastAttackDelay = 0.8
-                elseif _G.FastAttackDelay == "0.85" then
-                    _G.FastAttackDelay = 0.85
-                elseif _G.FastAttackDelay == "0.9" then
-                    _G.FastAttackDelay = 0.9
-                elseif _G.FastAttackDelay == "0.95" then
-                    _G.FastAttackDelay = 0.95
-                elseif _G.FastAttackDelay == "1" then
-                    _G.FastAttackDelay = 1
-                end
-            end)
-        end
-    end
-end)
-
-local Section = M:AddSection({
-    Name = "Bypass Teleport"
-})
-
-M:AddToggle({
-    Name = "Bypass TP[BETA]",
-    Default = false,
-    Flag = "Bypass TP",
-    Save = true,
-    Callback = function(Value)
-        BypassTP = true 
-    end    
-})
-
-
-local Section = M:AddSection({
-    Name = "Distance Mobs"
-})
-
-PosY = 30
-M:AddSlider({
-    Name = "Distance Mob",
-    Min = 0,
-    Max = 65,
-    Default = PosY,
-    Color = Color3.fromRGB(255,255,255),
-    Increment = 1,
-    ValueName = "Distance",
-    Default = false,
-    Flag = "Distance",
-    Save = true,
-    Callback = function(Value)
-        PosY = Value
-    end    
-})
-
 local Section = M:AddSection({
     Name = "Farm Fast : Lv 10 => 120"
 })
@@ -3343,13 +3160,13 @@ Farmfasttoggle = M:AddToggle({
 })
 
 local Section = M:AddSection({
-    Name = "Kaitun dỏm"
+    Name = "One Click"
 })
 
 
 
 M:AddToggle({
-    Name = "Kaitun[Ko có kill players]",
+    Name = "Kaitun Beta",
     Default = false,
     Flag = "Kaitun",
     Save = true,
@@ -3373,7 +3190,7 @@ M:AddToggle({
 })
 
 M:AddToggle({
-    Name = "Auto Click[Kick]",
+    Name = "Auto Click [ Kick ]",
     Default = false,
     Flag = "Auto Click",
     Save = true,
@@ -3822,7 +3639,209 @@ elseif _G.WhiteScreen == false then
         AutoAwakeningRace = Value
         end    
     })
-    
+spawn(function()
+    while wait() do
+        pcall(function()
+            if _G.V4 then
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,"Y",false,game)
+                wait(0.1)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,"Y",false,game)
+            end
+        end)
+    end
+end)
+spawn(function()
+    while wait() do
+        pcall(function()
+            if _G.V3 then
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,"T",false,game)
+                wait(0.1)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,"T",false,game)
+            end
+        end)
+    end
+end)
+
+ST:AddToggle({
+    Name = "Bring Mobs[Fix]",
+    Default = true,
+    Flag = "Bring Mobs",
+    Save = false,
+    Callback = function(Value)
+        _G.BringMonster = Value
+    end    
+})
+local Bring = {"Low", "Normal", "Super Bring"}
+_G.BringMode = "Normal"
+ST:AddDropdown({
+    Name = "Bring Mode",
+    Default = "Normal",
+    Options = Bring,
+    Default = false,
+    Flag = "Bring Mode",
+    Save = true,
+    Callback = function(Value)
+        _G.BringMode = Value
+    end    
+})
+spawn(function()
+    while wait(.1) do
+        if _G.BringMode then
+            pcall(function()
+                if _G.BringMode == "Low" then
+                    _G.BringMode = 300
+                elseif _G.BringMode == "Normal" then
+                    _G.BringMode = 350
+                elseif _G.BringMode == "Super Bring" then
+                    _G.BringMode = 400
+                end
+            end)
+        end
+    end
+end)
+
+local Section = ST:AddSection({
+    Name = "FastAttack :"
+})
+
+ST:AddToggle({
+    Name = "FastAttack",
+    Default = true,
+    Flag = "FastAttack",
+    Save = true,
+    Callback = function(true)
+        _G.FastAttack = Value
+    end    
+})
+local CameraShaker = require(game.ReplicatedStorage.Util.CameraShaker)
+CombatFrameworkR = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+y = debug.getupvalues(CombatFrameworkR)[2]
+spawn(function()
+    game:GetService("RunService").RenderStepped:Connect(function()
+        if _G.FastAttack then
+            if typeof(y) == "table" then
+                pcall(function()
+                    CameraShaker:Stop()
+                    y.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
+                    y.activeController.timeToNextAttack = 0
+                    y.activeController.hitboxMagnitude = 60
+                    y.activeController.active = false
+                    y.activeController.timeToNextBlock = 0
+                    y.activeController.focusStart = 1655503339.0980349
+                    y.activeController.increment = 1
+                    y.activeController.blocking = false
+                    y.activeController.attacking = false
+                    y.activeController.humanoid.AutoRotate = true
+                end)
+            end
+        end
+    end)
+end)
+spawn(function()
+    game:GetService("RunService").RenderStepped:Connect(function()
+        if _G.FastAttack == true then
+            game.Players.LocalPlayer.Character.Stun.Value = 0
+            game.Players.LocalPlayer.Character.Busy.Value = false        
+        end
+    end)
+end)
+
+local AttackList = {"0", "0.1", "0.175", "0.2", "0.25", "0.3", "0.35", "0.4", "0.45", "0.5", "0.55", "0.6", "0.65", "0.7", "0.75", "0.8", "0.85", "0.9", "0.95", "0.1"}
+ST:AddDropdown({
+	Name = "Attack Time",
+	Default = "0.5",
+	Options = AttackList,
+    Flag = "FastAttack Delay",
+    Save = true,
+	Callback = function(Value)
+		_G.FastAttackDelay = Value
+	end    
+})
+spawn(function()
+    while wait(.1) do
+        if _G.FastAttackDelay then
+            pcall(function()
+                if _G.FastAttackDelay == "0" then
+                    _G.FastAttackDelay = 0
+                elseif _G.FastAttackDelay == "0.1" then
+                    _G.FastAttackDelay = 0.1
+                elseif _G.FastAttackDelay == "0.175" then
+                    _G.FastAttackDelay = 0.175
+                elseif _G.FastAttackDelay == "0.2" then
+                    _G.FastAttackDelay = 0.2
+                elseif _G.FastAttackDelay == "0.25" then
+                    _G.FastAttackDelay = 0.25
+                elseif _G.FastAttackDelay == "0.3" then
+                    _G.FastAttackDelay = 0.3
+                elseif _G.FastAttackDelay == "0.35" then
+                    _G.FastAttackDelay = 0.35
+                elseif _G.FastAttackDelay == "0.4" then
+                    _G.FastAttackDelay = 0.5
+                elseif _G.FastAttackDelay == "0.45" then
+                    _G.FastAttackDelay = 0.45
+                elseif _G.FastAttackDelay == "0.5" then
+                    _G.FastAttackDelay = 0.5
+                elseif _G.FastAttackDelay == "0.55" then
+                    _G.FastAttackDelay = 0.55
+                elseif _G.FastAttackDelay == "0.6" then
+                    _G.FastAttackDelay = 0.6
+                elseif _G.FastAttackDelay == "0.65" then
+                    _G.FastAttackDelay = 0.65
+                elseif _G.FastAttackDelay == "0.7" then
+                    _G.FastAttackDelay = 0.7
+                elseif _G.FastAttackDelay == "0.75" then
+                    _G.FastAttackDelay = 0.75
+                elseif _G.FastAttackDelay == "0.8" then
+                    _G.FastAttackDelay = 0.8
+                elseif _G.FastAttackDelay == "0.85" then
+                    _G.FastAttackDelay = 0.85
+                elseif _G.FastAttackDelay == "0.9" then
+                    _G.FastAttackDelay = 0.9
+                elseif _G.FastAttackDelay == "0.95" then
+                    _G.FastAttackDelay = 0.95
+                elseif _G.FastAttackDelay == "1" then
+                    _G.FastAttackDelay = 1
+                end
+            end)
+        end
+    end
+end)
+
+local Section = ST:AddSection({
+    Name = "Bypass Teleport"
+})
+
+ST:AddToggle({
+    Name = "Bypass TP",
+    Default = true,
+    Flag = "Bypass TP",
+    Save = true,
+    Callback = function(Value)
+        BypassTP = true 
+    end    
+})
+
+
+local Section = ST:AddSection({
+    Name = "Distance Mobs"
+})
+
+PosY = 30
+ST:AddSlider({
+    Name = "Distance Mob",
+    Min = 0,
+    Max = 65,
+    Default = PosY,
+    Color = Color3.fromRGB(255,255,255),
+    Increment = 1,
+    ValueName = "Distance",
+    Default = false,
+    Flag = "Distance",
+    Save = true,
+    Callback = function(Value)
+        PosY = Value
+    end    
+})
 
 local Section = IQ:AddSection({
     Name = "Saber Menu"
