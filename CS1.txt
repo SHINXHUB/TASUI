@@ -2586,13 +2586,13 @@ local IQ = Window:MakeTab({
 })
 
 local S = Window:MakeTab({
-    Name = "📈 CHỈ SỐ",
+    Name = "Stats",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local E = Window:MakeTab({
-    Name = "ĐỊNH VỊ",
+    Name = "Esp",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
@@ -2634,13 +2634,13 @@ local R = Window:MakeTab({
 })
 
 local SH = Window:MakeTab({
-    Name = "🛒 cửa hàng",
+    Name = "Shop",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local C = Window:MakeTab({
-    Name = "🔰 khác",
+    Name = "Misc",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
@@ -2659,9 +2659,9 @@ local Section = W:AddSection({
 
 
 W:AddLabel("HUNTER X HUB | UPD")
-W:AddLabel("YT")
-W:AddLabel("@hunterx_hub")
-W:AddLabel("Discord")
+W:AddLabel("+ Auto Parry Banned")
+W:AddLabel("+ New library")
+W:AddLabel("if bug report in discord")
 W:AddLabel("discord.gg/EKmZy8Cb")
 local Section = W:AddSection({
     Name = "Status"
