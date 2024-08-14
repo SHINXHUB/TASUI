@@ -3044,7 +3044,29 @@ ToggleFarm = M:AddToggle({
     Save = true,
     Callback = function(Value)
         _G.AutoFarm = Value
+        _G.RaidPirate = Value
+        _G.AutoNevaSoulGuitar = Value
+        Auto_Cursed_Dual_Katana = Value
+        _G.RaidPirate = Value
+        _G.Autotushita = Value
+        _G.AutoCarvender = Value
+        _G.AutoFarmBossHallow = Value
+        _G.AutoDarkDagger = Value
+        _G.AutoTwinHook = Value
+        _G.Tweenfruit = Value
+        _G.BringFruitBF = Value
+        StopTween(_G.BringFruitBF)
+        StopTween(_G.Tweenfruit)
+        StopTween(_G.AutoDarkDagger)
+        StopTween(_G.AutoDarkDagger)
+        StopTween( _G.AutoTwinHook)
+        StopTween(Auto_Cursed_Dual_Katana)
+        StopTween(_G.AutoNevaSoulGuitar)
         StopTween(_G.AutoFarm)
+        StopTween(_G.RaidPirate)
+        StopTween(_G.AutoFarmBossHallow)
+        StopTween( _G.Autotushita)
+        StopTween( _G.AutoCarvender)
     end    
 })
 
@@ -3390,7 +3412,7 @@ local Section = M:AddSection({
 
 
 M:AddToggle({
-    Name = "Kaitun[Ko có kill players]",
+    Name = "Kaitun",
     Default = false,
     Flag = "Kaitun",
     Save = true,
