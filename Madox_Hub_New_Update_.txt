@@ -347,7 +347,7 @@ function Blacklib:Window()
     end)
     spawn(function()
         while task.wait() do
-            titlefunc:Refresh("") wait(.2) titlefunc:Refresh("M") wait(.2) titlefunc:Refresh("Ma") wait(.2) titlefunc:Refresh("Mad") wait(.2) titlefunc:Refresh("Mado") wait(.2) titlefunc:Refresh("Madox") wait(.2) titlefunc:Refresh("Mado") wait(.2) titlefunc:Refresh("Mad") wait(.9) titlefunc:Refresh("Ma") wait(.2) titlefunc:Refresh("M") wait(.2) titlefunc:Refresh("") wait(.2) wait(.3)
+            titlefunc:Refresh("_G.loading = true") wait(.2) titlefunc:Refresh("SHIN X HUB") wait(.2) titlefunc:Refresh("SHIN X HUB") wait(.2) titlefunc:Refresh("SHIN X HU") wait(.2) titlefunc:Refresh("SHIN X H") wait(.2) titlefunc:Refresh("SHIN X") wait(.2) titlefunc:Refresh("SHIN") wait(.2) titlefunc:Refresh("SHI") wait(.9) titlefunc:Refresh("SH") wait(.2) titlefunc:Refresh("S") wait(.2) titlefunc:Refresh("_G.Reset = true") wait(.2) wait(.3)
         end
     end)
     -- End Windows --
@@ -526,7 +526,7 @@ function Blacklib:Window()
         TabImage.BackgroundTransparency = 1.000
         TabImage.Position = UDim2.new(0, 3, 0, 4)
         TabImage.Size = UDim2.new(0, 20, 0, 20)
-        TabImage.Image = img or "rbxassetid://8666601749"
+        TabImage.Image = img or "rbxassetid://18952692046"
         TabImage.ImageColor3 = Color3.fromRGB(200,200,200)
         
         TabTitle.Name = tabtitle or "TabTitle"
@@ -1183,7 +1183,7 @@ function Blacklib:Window()
                     ItemList.Font = Enum.Font.Code
                     ItemList.TextColor3 = Color3.fromRGB(255,255,255)
                     ItemList.TextSize = 12.000
-                    ItemList.Text = newadd or "None..."
+                    ItemList.Text = newadd or ""
                     ItemList.TextXAlignment = Enum.TextXAlignment.Center
                         
                     ItemList.MouseEnter:Connect(function()
@@ -1198,7 +1198,7 @@ function Blacklib:Window()
                     end)
                     
                     ItemList.MouseButton1Click:Connect(function()
-                        DropTextList.Text = newadd or "None..."
+                        DropTextList.Text = newadd or ""
                         pcall(callback, newadd)
                         DropToggled = false
                         DropSizeFrame:TweenSize(UDim2.new(0, 387, 0, 60), 'InOut', 'Linear', 0.08)
@@ -1878,7 +1878,7 @@ function Blacklib:Window()
 end
 
 
-local ui = Blacklib:Window("HUNTER X HUB Pro")
+local ui = Blacklib:Window("SHIN X HUB")
 
 local M = ui:Tab("Main","rbxassetid://11446825283")
 local F = ui:Tab("Farm/Quest","rbxassetid://9260732790")
