@@ -347,7 +347,7 @@ function Blacklib:Window()
     end)
     spawn(function()
         while task.wait() do
-            titlefunc:Refresh("") wait(.2) titlefunc:Refresh("M") wait(.2) titlefunc:Refresh("Ma") wait(.2) titlefunc:Refresh("Mad") wait(.2) titlefunc:Refresh("Mado") wait(.2) titlefunc:Refresh("Madox") wait(.2) titlefunc:Refresh("Mado") wait(.2) titlefunc:Refresh("Mad") wait(.9) titlefunc:Refresh("Ma") wait(.2) titlefunc:Refresh("M") wait(.2) titlefunc:Refresh("") wait(.2) wait(.3)
+            titlefunc:Refresh("_G.Name = ") wait(.2) titlefunc:Refresh("S") wait(.2) titlefunc:Refresh("SH") wait(.2) titlefunc:Refresh("SHI") wait(.2) titlefunc:Refresh("SHIN") wait(.2) titlefunc:Refresh("SHIN X ") wait(.2) titlefunc:Refresh("SHIN X HUB") wait(.2) titlefunc:Refresh("SHIN X") wait(.9) titlefunc:Refresh("SHIN") wait(.2) titlefunc:Refresh("SHI") wait(.2) titlefunc:Refresh("_G.Name =") wait(.2) wait(.3)
         end
     end)
     -- End Windows --
@@ -9386,7 +9386,7 @@ spawn(function()
                 Tween(workspace.Map.MysticIsland.PrimaryPart.CFrame*CFrame.new(0,250,0))
                 else
 game.StarterGui:SetCore("SendNotification", {
-        Title = "MADOX HUB"; -- the title (ofc)
+        Title = "SHIN X HUB"; -- the title (ofc)
         Text = "Mirage not Found!"; -- what the text says (ofc)
         Icon = "rbxassetid://12511245920"; -- the image if u want. 
         Duration = 3; -- how long the notification should in secounds
