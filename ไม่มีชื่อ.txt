@@ -347,7 +347,7 @@ function Blacklib:Window()
     end)
     spawn(function()
         while task.wait() do
-            titlefunc:Refresh("_G.loading = true") wait(.2) titlefunc:Refresh("SHIN X HUB") wait(.2) titlefunc:Refresh("SHIN X HUB") wait(.2) titlefunc:Refresh("SHIN X HU") wait(.2) titlefunc:Refresh("SHIN X H") wait(.2) titlefunc:Refresh("SHIN X") wait(.2) titlefunc:Refresh("SHIN") wait(.2) titlefunc:Refresh("SHI") wait(.9) titlefunc:Refresh("SH") wait(.2) titlefunc:Refresh("S") wait(.2) titlefunc:Refresh("_G.Reset = true") wait(.2) wait(.3)
+            titlefunc:Refresh("") wait(.2) titlefunc:Refresh("YT") wait(.2) titlefunc:Refresh("@SHIN_XHUB") wait(.2) titlefunc:Refresh("SHIN") wait(.2) titlefunc:Refresh("SHIN X") wait(.2) titlefunc:Refresh("SHIN X HUB") wait(.2) titlefunc:Refresh("SHIN X UH") wait(.2) titlefunc:Refresh("YT") wait(.9) titlefunc:Refresh("@SHIN_XHUB") wait(.2) titlefunc:Refresh("Reset Ui") wait(.2) titlefunc:Refresh("") wait(.2) wait(.3)
         end
     end)
     -- End Windows --
@@ -526,7 +526,7 @@ function Blacklib:Window()
         TabImage.BackgroundTransparency = 1.000
         TabImage.Position = UDim2.new(0, 3, 0, 4)
         TabImage.Size = UDim2.new(0, 20, 0, 20)
-        TabImage.Image = img or "rbxassetid://18952692046"
+        TabImage.Image = img or "rbxassetid://8666601749"
         TabImage.ImageColor3 = Color3.fromRGB(200,200,200)
         
         TabTitle.Name = tabtitle or "TabTitle"
@@ -1183,7 +1183,7 @@ function Blacklib:Window()
                     ItemList.Font = Enum.Font.Code
                     ItemList.TextColor3 = Color3.fromRGB(255,255,255)
                     ItemList.TextSize = 12.000
-                    ItemList.Text = newadd or ""
+                    ItemList.Text = newadd or "None..."
                     ItemList.TextXAlignment = Enum.TextXAlignment.Center
                         
                     ItemList.MouseEnter:Connect(function()
@@ -1198,7 +1198,7 @@ function Blacklib:Window()
                     end)
                     
                     ItemList.MouseButton1Click:Connect(function()
-                        DropTextList.Text = newadd or ""
+                        DropTextList.Text = newadd or "None..."
                         pcall(callback, newadd)
                         DropToggled = false
                         DropSizeFrame:TweenSize(UDim2.new(0, 387, 0, 60), 'InOut', 'Linear', 0.08)
@@ -1878,7 +1878,7 @@ function Blacklib:Window()
 end
 
 
-local ui = Blacklib:Window("SHIN X HUB")
+local ui = Blacklib:Window("Madox")
 
 local M = ui:Tab("Main Farm","rbxassetid://11446825283")
 local F = ui:Tab("Sub Farming","rbxassetid://9260732790")
@@ -1886,11 +1886,11 @@ local S = ui:Tab("Stats","rbxassetid://11447069304")
 local De = ui:Tab("Sea Event","rbxassetid://7044284832")
 local C = ui:Tab("Player PVP","rbxassetid://11446900930")
 local T = ui:Tab("Travel","rbxassetid://11446920523")
-local D = ui:Tab("Raid | Esp","rbxassetid://11446957539")
+local D = ui:Tab("Raid Esp","rbxassetid://11446957539")
 local U = ui:Tab("Fruit","rbxassetid://11446965348")
 local H = ui:Tab("Shop","rbxassetid://6031265976")
 local Misc = ui:Tab("Misc","rbxassetid://11447063791")
-local R = ui:Tab("RaceV4","rbxassetid://11446900930")
+local R = ui:Tab("Race V4","rbxassetid://11446900930")
 ---------------------------------------------------------------------------------------------------
 local Main = M:NewSection("Main")
 local Farm = F:NewSection("Farm/Quest")
@@ -1907,7 +1907,7 @@ local RaceV4 = R:NewSection("RaceV4")
 
 Main:Label("เซิฟเวอร์")
 
-Time = Main:Label("ละยะเวลาในการใสคริปต์")
+Time = Main:Label("รันสคริปต์")
 
 function UpdateTime()
 local GameTime = math.floor(workspace.DistributedGameTime+0.5)
@@ -1925,7 +1925,7 @@ spawn(function()
  end
  end)
 
-Client = Main:Label("Fps")
+Client = Main:Label("Client")
 
 function UpdateClient()
 local Fps = workspace:GetRealPhysicsFPS()
@@ -1938,7 +1938,7 @@ spawn(function()
  end
  end)
 
-Client1 = Main:Label("ปิง")
+Client1 = Main:Label("Client")
 
 function UpdateClient1()
 local Ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
@@ -1955,7 +1955,7 @@ spawn(function()
 Main:Line()
 
 --// Setting Player
-Main:Label(" ส่วนเสริม | ไม่จำเป็น ")
+Main:Label("เกี่ยวกับผู้เล่น")
 
 
 
@@ -1979,7 +1979,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
   end)
 end
 
-Main:Button("ทำภาพดินน้ำมัน", function()
+Main:Button("ทำภาพกาก | แนะนำให้เปิดถ้าแล็ค", function()
   local decalsyeeted = true
   local g = game
   local w = g.Workspace
@@ -2019,7 +2019,7 @@ Main:Button("ทำภาพดินน้ำมัน", function()
   end
   end)
 
-Main:Button("รีจอย", "Rejoin on Server", function()
+Main:Button("รีจอยเซิร์ฟเวอร์", "Rejoin on Server", function()
   game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
   end)
 
@@ -2162,7 +2162,7 @@ spawn(function()
 end)
 
 
-Main:Label("ส่วนเสริม | จำเป็น")
+Main:Label("ส่วนเสริม")
 
 --// Setting Farm
 local bringfrec = 250
@@ -2174,7 +2174,7 @@ local WeaponList = {
   "Melee","Devil Fruit","Sword","Gun"
 }
 
-Main:Dropdown("เลือกอาวุธ",WeaponList,function(weaponfunc)
+Main:Dropdown("อาวุธ",WeaponList,function(weaponfunc)
   SelectWeapon = weaponfunc
   end)
 
@@ -2225,7 +2225,7 @@ spawn(function()
 end)
 
 --// Fast Attack
-local AttackList = {"ช้า", "ปกติ", "ความเร็ว", "เร็วมาก | เสี่ยงโดนเตะ"}
+local AttackList = {"ปกติ", "ความเร็ว", "ไม่ค่อยเร็วมาก", "เร็วมากๆ | เสี่ยงโดนเตะ"}
 _G.FastAttackDelay = "Default"
 Main:Dropdown("ความเร็วโจมตี", AttackList,function(adl)
     _G.FastAttackDelay = adl
@@ -2234,13 +2234,13 @@ spawn(function()
     while wait(.1) do
         if _G.FastAttackDelay then
             pcall(function()
-                if _G.FastAttackDelay == "ช้า" then
+                if _G.FastAttackDelay == "ปกติ" then
                     _G.FastAttackDelay = 0.9
-                elseif _G.FastAttackDelay == "ปกติ" then
-                    _G.FastAttackDelay = 0.5
                 elseif _G.FastAttackDelay == "ความเร็ว" then
-                    _G.FastAttackDelay = 0.3
-                elseif _G.FastAttackDelay == "เร็วมาก | เสี่ยงโดนเตะ" then
+                    _G.FastAttackDelay = 0.5
+                elseif _G.FastAttackDelay == "ไม่ค่อยเร็วมาก" then
+                    _G.FastAttackDelay = 0.2
+                elseif _G.FastAttackDelay == "เร็วมากๆ | เสี่ยงโดนเตะ" then
                     _G.FastAttackDelay = 0.0
                 end
             end)
@@ -2254,7 +2254,7 @@ FarmTable = {
 "Behind"
 }
 
-Main:Dropdown("เลือกโหมดการบิน", FarmTable,function(value)
+Main:Dropdown("โหมดการบิน", FarmTable,function(value)
     AutoFarmType = value
 end)
 spawn(function()
@@ -2295,24 +2295,24 @@ end
 end)
 
 if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
-DisFarm = 30
-Main:Slider("Farm Distance",1,100,30,function(value)
+DisFarm = 60
+Main:Slider("ละยะห่าง",1,100,30,function(value)
  DisFarm = value
  end)
 else
- DisFarm = 30
-Main:Slider("Farm Distance",1,100,30,function(value)
+ DisFarm = 60
+Main:Slider("ละยะห่าง",1,100,30,function(value)
  DisFarm = value
  end)
 end
 
 
-Main:Toggle('บิน | วาป | รีตัว', BypassTP, function(vale)
+Main:Toggle('บิน | รีตัว | วาป', BypassTP, function(vale)
   BypassTP = vale
 end)
 
 _G.FastAttack = true
-Main:Toggle('ความเร็จโจมตี | อย่าปิด', _G.FastAttack, function(famobile)
+Main:Toggle('ความเร็วโจมตี', _G.FastAttack, function(famobile)
     _G.FastAttack = famobile
 end)
 
@@ -2373,7 +2373,7 @@ spawn(function()
 end)
 
 
-Main:Toggle("รวม มอนสเตอร์", true, function(Value)
+Main:Toggle("รวมมอน", true, function(Value)
   BringMobs = Value
   end)
 
@@ -2400,7 +2400,7 @@ spawn(function()
 end)
 
 
-Main:Toggle("ออโต้ ตั้งจุดเกิด", false, function(setspawnfunc)
+Main:Toggle("ออโต้ ตั้งจุดเกิด",true, function(setspawnfunc)
   AutoSetSpawn = setspawnfunc
   end)
 spawn(function()
@@ -2411,7 +2411,7 @@ spawn(function()
   end
   end)
 
-Main:Toggle("ออโต้ ใช้ฮาคิ",true, function(busohakifunc)
+Main:Toggle("ออโต้ ฮาคิ",true, function(busohakifunc)
   BusoHaki = busohakifunc
   end)
 spawn(function()
@@ -3769,16 +3769,16 @@ end
 end
 return false
 end
-Main:Label("เมนู ฟาร์ม")
+Main:Label("ฟาร์ม")
 --// main farming
 local MonsterStatus = Main:Label("")
 local QuestStatus = Main:Label("")
 
 spawn(function()
   while task.wait() do
-  if game:GetService("ผู้เล่น").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
+  if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
   MonsterStatus:Set("[มอนสเตอร์] : ...")
-  QuestStatus:Set("[เควสต์ที่รับ] : ...".." | [เลเวล] : ...")
+  QuestStatus:Set("[เควสต์] : ...".." | [เลเวล] : ...")
   elseif game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
   pcall(function()
     CheckLevel()
@@ -3834,19 +3834,19 @@ function CheckAntiCheatBypass()
 
 CheckAntiCheatBypass()
 
-Main:Toggle("กันแบน | ถ้าปิดละโดนแบนกูไม่เกี่ยว", true, function(value)
+Main:Toggle("กันแบน | ตัวนี้เป็นจะเป็น | กันแบน/รีเลเวล", true, function(value)
   _G.SafeFarm = value
 CheckAntiCheatBypass()
-  Notification("Anti Cheat Bypass Activated ✅")
+  Notification("กันแบน 🟢")
 end)
 
 Main:Dropdown("เลือกโหมดการฟาร์ม", {
- "ฟาร์มเลเวล","ฟาร์มไม่รับเควสต์","ฟาร์มมอนสเตอร์รอบๆ"
+ "Level Farm","No Quest","Near Farm Mode"
 },function(value)
  _G.Select_Mode_Farm = value
 end)
 
-Main:Toggle("เริ่มการออโต้ฟาร์ม",_G.Auto_Farm_Level,function(value)
+Main:Toggle("เริ่มการฟาร์ม",_G.Auto_Farm_Level,function(value)
  _G.Auto_Farm_Level = value
 end)
 
@@ -3991,7 +3991,7 @@ spawn(function()
   end)
 
 if World1 then
-    Main:Toggle('Auto Second World', AutoSecondSea, function(scfunc)
+    Main:Toggle('ออโต้ โลก 2', AutoSecondSea, function(scfunc)
         AutoSecondSea = scfunc
         CancelTween(AutoSecondSea)
         if game:GetService("Players").LocalPlayer.Data.Level.Value <= 700 then
@@ -4282,7 +4282,7 @@ if World2 then
 end
 
 if World2 then
-Main:Toggle('ออโต้ Ectoplasm', AutoEcto, function(aef)
+Main:Toggle('ออโต้ ฟาร์ม มอนเกาะเรือผี', AutoEcto, function(aef)
     AutoEcto = aef
     CancelTween(AutoEcto)
 end)
@@ -4330,7 +4330,7 @@ end
 
 Main:Label("กล่อง")
 
-Main:Toggle("ออโต้ฟาร์ม กล่อง | บิน",false,function(t)
+Main:Toggle("ออโต้ ฟาร์ม กล่อง | บิน",false,function(t)
 
  _G.d = t
  local function HttpGet(url)
@@ -4398,18 +4398,18 @@ Main:Toggle("ออโต้ฟาร์ม กล่อง | บิน",false,f
 end
 end)
 
-Main:Toggle("ออโต้ฟาร์ม กล่อง | เปลี่ยนเซิฟ",_G.AutoFarmChest_Hop,function(value)
+Main:Toggle("ออโต้ ฟาร์ม กล่อง | เปลี่ยนเซิฟ",_G.AutoFarmChest_Hop,function(value)
  _G.AutoFarmChest_Hop = value
  end)
 
-Main:Toggle('ออโต้ฟาร์ม กล่อง | เปลี่ยนเซิฟ', _G.GrabChested, function(gacf)
+Main:Toggle('ออโต้ ฟาร์ม กล่อง วาป | เปลี่ยนเซิฟ | เสี่ยงโดนรีของ', _G.GrabChested, function(gacf)
   _G.GrabChested = gacf
 end)
 
 if World3 then
-Main:Label("โบน")
+Main:Label("กระดูก")
 
-Main:Toggle("ออโต้ฟาร์ม โบน",AutoFarmBone, function(bonefarn)
+Main:Toggle("ออโต้ ฟาร์ม กระดูก",AutoFarmBone, function(bonefarn)
   AutoFarmBone = bonefarn
   CancelTween(AutoFarmBone)
   if AutoFarmBone and SelectWeapon == nil then
@@ -4474,7 +4474,7 @@ spawn(function()
   end
 end)
 
-Main:Toggle("ออโต้ สุ่มโบน",_G.Auto_Trade_Bone,function(value)
+Main:Toggle("Auto Trade Bone",_G.Auto_Trade_Bone,function(value)
  _G.Auto_Trade_Bone = value
  end)
 
@@ -4493,11 +4493,11 @@ spawn(function()
  end
  end)
 
-Main:Toggle('ออโต้ เสี่ยงโชค', TryLuck, function(gravefunc)
+Main:Toggle('Auto Try Luck', TryLuck, function(gravefunc)
         TryLuck = gravefunc
     
     end)
-    Main:Toggle('ออโต้ เสี่ยงโชค', TryLuck, function(prayfunc)
+    Main:Toggle('Auto Pray', TryLuck, function(prayfunc)
         Pray = prayfunc
     
     end)
@@ -4522,13 +4522,13 @@ Main:Toggle('ออโต้ เสี่ยงโชค', TryLuck, function(gra
     end)
 end
 
-Main:Label("มอนสเตอร์ และ อื่นๆ")
+Main:Label("👥 Other Mobs 👥")
 
-Main:Dropdown("เลือกมอนสเตอร์",tableMon, function(monsterlistfunc)
+Main:Dropdown("Select Monster",tableMon, function(monsterlistfunc)
   SelectMonster = monsterlistfunc
   end)
 
-Main:Toggle("เริ่มการฟาร์ม | รับเควสต์", AutoFarmSelectMonsterQuest, function(smq)
+Main:Toggle("Auto Farm Select Monster (Quest)", AutoFarmSelectMonsterQuest, function(smq)
   AutoFarmSelectMonsterQuest = smq
   CancelTween(AutoFarmSelectMonsterQuest)
   if AutoFarmSelectMonsterQuest and SelectWeapon == nil then
@@ -4594,7 +4594,7 @@ spawn(function()
   end
   end)
 
-Main:Toggle("เริ่มการฟาร์ม | ไม่รับเควสต์", AutoFarmSelectMonsterNoQuest, function(smnq)
+Main:Toggle("Auto Farm Select Monster (No Quest)", AutoFarmSelectMonsterNoQuest, function(smnq)
   AutoFarmSelectMonsterNoQuest = smnq
   CancelTween(AutoFarmSelectMonsterNoQuest)
   if AutoFarmSelectMonsterNoQuest and SelectWeapon == nil then
@@ -4659,7 +4659,7 @@ spawn(function()
   end)
 
 
-Main:Label("วัดถุดิบ")
+Main:Label("⚔️ Material Farm ⚔️")
 --// Material List
 
 if World1 then
@@ -4674,11 +4674,11 @@ MaterialList = {
 }
 end
 
-Main:Dropdown('เลือกวัดถุดิบ', MaterialList, {""}, function(matelist)
+Main:Dropdown('Select Material', MaterialList, {""}, function(matelist)
   SelectMaterial = matelist
   end)
 
-Main:Toggle('เริ่มการฟาร์ม',AutoFarmMaterial, function(automatefunc)
+Main:Toggle('Auto Farm Material',AutoFarmMaterial, function(automatefunc)
   AutoFarmMaterial = automatefunc
   CancelTween(AutoFarmMaterial)
   end)
@@ -4738,7 +4738,7 @@ spawn(function()
   end
 end)
 
-Main:Label("บอส")
+Main:Label("🎃 Boss Farm 🎃")
 
 --// Boss Farming
 local BossStatus = Main:Label("")
@@ -4749,12 +4749,12 @@ spawn(function()
   pcall(function()
     CheckBossQuest()
     if SelectBoss == nil then
-    BossStatus:Set("[บอส] : ...".." | [ละยะห่าง] : ...")
-    BossQuest:Set("[เควสต์] : ...".." | [เลเวล] : ...")
+    BossStatus:Set("[Boss] : ...".." | [Distance] : ...")
+    BossQuest:Set("[Quest] : ...".." | [Level] : ...")
     elseif SelectBoss == BossMon then
     local posBos = math.floor((game.Players.LocalPlayer.Character.HumanoidRootPart.Position - game:GetService("ReplicatedStorage"):FindFirstChild(BossMon).HumanoidRootPart.Position).Magnitude)
-    BossStatus:Set("[บอส] : "..BossMon.." | [ละยะห่าง] : "..posBos.." M")
-    BossQuest:Set("[เควสต์] : "..NameQuestBoss.." | [เลเวล] : "..QuestLvBoss)
+    BossStatus:Set("[Boss] : "..BossMon.." | [Distance] : "..posBos.." M")
+    BossQuest:Set("[Quest] : "..NameQuestBoss.." | [Level] : "..QuestLvBoss)
     end
     end)
   end
@@ -4788,11 +4788,11 @@ for _, name in pairs(Boss) do
 end
 
 
-local BossName = Main:Dropdown("เลือกบอส", bossCheck, function(value)
+local BossName = Main:Dropdown("Select Boss", bossCheck, function(value)
     SelectBoss = value
 end)
 
-Main:Button("รีเซ็ตบอส", function()
+Main:Button("Refresh Boss", function()
 BossName:Clear()
 wait(0.1)
 for i, v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
@@ -4805,7 +4805,7 @@ for i, v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
 end
 end)
 
-Main:Toggle('ออโต้ฟาร์ม บอส | รับเควสต์', AutoFarmBossQuest, function(afbq)
+Main:Toggle('Auto Farm Boss (Quest)', AutoFarmBossQuest, function(afbq)
   AutoFarmBossQuest = afbq
   CancelTween(AutoFarmBossQuest)
   end)
@@ -4874,7 +4874,7 @@ Main:Toggle('ออโต้ฟาร์ม บอส | รับเควสต
         end
     end)
     
-Main:Toggle('ออโต้ฟาร์ม บอส | ไม่รับเควสต์', toFarmBossNoQuest, function(afbnq)
+Main:Toggle('Auto Farm Boss (No Quest)', toFarmBossNoQuest, function(afbnq)
   AutoFarmBossNoQuest = afbnq
   CancelTween(AutoFarmBossNoQuest)
   end)
@@ -4924,18 +4924,18 @@ spawn(function()
     end
 end)
 
-Main:Label("ความชำนาญ")
+Main:Label("🍃 Mastery Farm 🍃")
 
 --// Mastery Farm
 
 local MasteryType = {
-  'รับเควสต์', 'ไม่รับเควสต์', 'รอบๆ'
+  'Quest', 'No Quest', 'Nearest'
 }
-Main:Dropdown('เลือกโหมดการฟาร์ม', MasteryType,function(typefunc)
+Main:Dropdown('Select type', MasteryType,function(typefunc)
   TypeMastery = typefunc
   end)
 
-Main:Toggle("ออโต้ฟาร์ม ความชำนาญ | ผลปีศาจ", AutoFarmMasDevilFruit, function(dfm)
+Main:Toggle("Auto Farm Mastery (Devil Fruit)", AutoFarmMasDevilFruit, function(dfm)
   AutoFarmMasDevilFruit = dfm
   CancelTween(AutoFarmMasDevilFruit)
   if AutoFarmMasDevilFruit and SelectWeapon == nil then
@@ -4994,7 +4994,7 @@ spawn(function()
 
 spawn(function()
   while task.wait(.1) do
-  if AutoFarmMasDevilFruit and TypeMastery == 'รับเควสต์' then
+  if AutoFarmMasDevilFruit and TypeMastery == 'Quest' then
   pcall(function()
     CheckLevel()
     if not string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, NameMon) or game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
@@ -5036,7 +5036,7 @@ spawn(function()
     MonFarm = v.Name
     Click()
     end
-    until not AutoFarmMasDevilFruit or not v.Parent or v.Humanoid.Health == 0 or game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false or not game:GetService("Workspace").Enemies:FindFirstChild(v.Name) or not TypeMastery == 'รับเควสต์'
+    until not AutoFarmMasDevilFruit or not v.Parent or v.Humanoid.Health == 0 or game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false or not game:GetService("Workspace").Enemies:FindFirstChild(v.Name) or not TypeMastery == 'Queat'
     _G.UseSkill = false
     end
     end
@@ -5045,7 +5045,7 @@ spawn(function()
     Tween(CFrameMon)
     end
     end)
-  elseif AutoFarmMasDevilFruit and TypeMastery == 'ไม่รับเควสต์' then
+  elseif AutoFarmMasDevilFruit and TypeMastery == 'No Quest' then
   pcall(function()
     CheckLevel()
     if BypassTP then
@@ -5080,7 +5080,7 @@ spawn(function()
     Click()
     end
 
-    until not AutoFarmMasDevilFruit or not v.Parent or v.Humanoid.Health == 0 or not game:GetService("Workspace").Enemies:FindFirstChild(v.Name) or not TypeMastery == 'ไม่รับเควสต์'
+    until not AutoFarmMasDevilFruit or not v.Parent or v.Humanoid.Health == 0 or not game:GetService("Workspace").Enemies:FindFirstChild(v.Name) or not TypeMastery == 'No Quest'
     _G.UseSkill = false
     end
     end
@@ -5089,7 +5089,7 @@ spawn(function()
     Tween(CFrameMon)
     end
     end)
-  elseif AutoFarmMasDevilFruit and TypeMastery == 'รอบๆ' then
+  elseif AutoFarmMasDevilFruit and TypeMastery == 'Nearest' then
   pcall(function()
     for i,v in pairs (game.Workspace.Enemies:GetChildren()) do
     if v.Name and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") then
@@ -5113,7 +5113,7 @@ spawn(function()
     MonFarm = v.Name
     Click()
     end
-    until not AutoFarmMasDevilFruit or not MasteryType == 'รอบๆ' or not v.Parent or v.Humanoid.Health == 0 or not TypeMastery == 'รอบๆ'
+    until not AutoFarmMasDevilFruit or not MasteryType == 'Nearest' or not v.Parent or v.Humanoid.Health == 0 or not TypeMastery == 'Nearest'
     _G.UseSkill = false
     end
     end
@@ -5125,7 +5125,7 @@ spawn(function()
   
   
 
-Main:Toggle("ออโต้ฟาร์ม ความชำนาญ | ปืน",AutoFarmMasGun, function(gmf)
+Main:Toggle("Auto Farm Mastery (Gun)",AutoFarmMasGun, function(gmf)
   AutoFarmMasGun = gmf
   CancelTween(AutoFarmMasGun)
   if AutoFarmMasGun and SelectWeapon == nil then
@@ -5179,7 +5179,7 @@ spawn(function()
     MonFarm = v.Name
     Click()
     end
-    until not AutoFarmMasGun or not v.Parent or v.Humanoid.Health <= 0 or game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false or not game:GetService("Workspace").Enemies:FindFirstChild(v.Name) or not TypeMastery == 'รับเควสต์'
+    until not AutoFarmMasGun or not v.Parent or v.Humanoid.Health <= 0 or game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false or not game:GetService("Workspace").Enemies:FindFirstChild(v.Name) or not TypeMastery == 'Queat'
     _G.UseGunMastery = false
     end
     end
@@ -5226,7 +5226,7 @@ spawn(function()
     MonFarm = v.Name
     Click()
     end
-    until not AutoFarmMasGun or not v.Parent or v.Humanoid.Health <= 0 or not game:GetService("Workspace").Enemies:FindFirstChild(v.Name) or not TypeMastery == 'ไม่รับเควสต์'
+    until not AutoFarmMasGun or not v.Parent or v.Humanoid.Health <= 0 or not game:GetService("Workspace").Enemies:FindFirstChild(v.Name) or not TypeMastery == 'No Quest'
     end
     end
     else
@@ -5234,7 +5234,7 @@ spawn(function()
     Tween(CFrameMon)
     end
     end)
-  elseif AutoFarmMasGun and TypeMastery == 'รอบๆ' then
+  elseif AutoFarmMasGun and TypeMastery == 'Nearest' then
   pcall(function()
     for i,v in pairs (game.Workspace.Enemies:GetChildren()) do
     if v.Name and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") then
@@ -5261,7 +5261,7 @@ spawn(function()
     MonFarm = v.Name
     Click()
     end
-    until not AutoFarmMasGun or not MasteryType == 'รอบๆ' or not v.Parent or v.Humanoid.Health <= 0 or not TypeMastery == 'รอบๆ'
+    until not AutoFarmMasGun or not MasteryType == 'Nearest' or not v.Parent or v.Humanoid.Health <= 0 or not TypeMastery == 'Nearest'
     _G.UseGunMastery = false
     end
     end
@@ -5287,7 +5287,7 @@ spawn(function()
   end)
 
 KillPercent = 25
-Main:Slider('เลือดมอน ... %',1,100,25, function(KillPercentfunc)
+Main:Slider('Kill Mobs At Health min ... %',1,100,25, function(KillPercentfunc)
   KillPercent = KillPercentfunc
   end)
 
@@ -5296,40 +5296,40 @@ SkillX = true
 SkillC = true
 SkillV = true
 SkillF = true
-Main:Toggle('ใช้สกิว Z',SkillZ, function(zfunc)
+Main:Toggle('Use Skill Z',SkillZ, function(zfunc)
   SkillZ = zfunc
   end)
 
-Main:Toggle('ใช้สกิว X', SkillX, function(xfunc)
+Main:Toggle('Use Skill X', SkillX, function(xfunc)
   SkillX = xfunc
   end)
 
-Main:Toggle('ใช้สกิว C', SkillC, function(cfunc)
+Main:Toggle('Use Skill C', SkillC, function(cfunc)
   SkillC = cfunc
   end)
 
-Main:Toggle('ใช่สกิว V', SkillV, function(vfunc)
+Main:Toggle('Use Skill V', SkillV, function(vfunc)
   SkillV = vfunc
   end)
 
-Main:Toggle('ใช้สกิว F', SkillF, function(ffunc)
+Main:Toggle('Use Skill F', SkillF, function(ffunc)
   SkillF = ffunc
 end)
 
-    Main:Label(" ฮาคิสังเกต ")
+    Main:Label(" Observation Haki ")
 
 local ObservationRange = Main:Label("")
 
 spawn(function()
     while true do
         pcall(function()
-            ObservationRange:Set("ฮาคิสังเกตเลเวล | "..math.floor(game:GetService("Players").LocalPlayer.VisionRadius.Value))
+            ObservationRange:Set("Observation Level : "..math.floor(game:GetService("Players").LocalPlayer.VisionRadius.Value))
             game.RunService.RenderStepped:wait()
         end)
     end
 end)
 
-Main:Toggle('ออโต้ฟาร์ม ฮาคิสังเกต', false, function(autokenf)
+Main:Toggle('Auto Farm Observation', false, function(autokenf)
     AutoFarmKen = autokenf
     CancelTween(AutoFarmKen)
 end)
@@ -5419,12 +5419,12 @@ spawn(function()
     end
 end)
 if Worl3 then
-Main:Toggle('ออโต้ ฮาคิสังเกต V2', false, function(autokenv2f)
+Main:Toggle('Auto Observation V2', false, function(autokenv2f)
     AutoKenV2 = autokenv2f
     CancelTween(AutoKenV2)
 end)
 
-Main:Toggle('ออโต้ ฮาคิสังเกต V2 | เปลี่ยนเซิฟ', false, function(kenhopf)
+Main:Toggle('Auto Observation V2 Hop', false, function(kenhopf)
     AutoKenHop = kenhopf
 end)
 
@@ -5467,9 +5467,9 @@ end
 
 
 
-Farm:Label(" หมัด")
+Farm:Label(" Fighting Style")
 
-Farm:Toggle('ออโต้ ขาดำ V1', AutoDeathStep, function(ads)
+Farm:Toggle('Auto Death Step', AutoDeathStep, function(ads)
     AutoDeathStep = ads
     CancelTween(AutoDeathStep)
     if AutoDeathStep then
@@ -5551,7 +5551,7 @@ spawn(function()
     end
 end)
 
-Farm:Toggle('ออโต้ หมัดซุปเปอร์ฮิวแมน V1', AutoSuperhuman, function(autosuperhumanfunc)
+Farm:Toggle('Auto Super Human', AutoSuperhuman, function(autosuperhumanfunc)
     AutoSuperhuman = autosuperhumanfunc
     CancelTween(AutoSuperhuman)
     if AutoSuperhuman then
@@ -5622,7 +5622,7 @@ spawn(function()
     end
 end)
 
-Farm:Toggle('ออโต้ หมัดมนุษย์เงือก V1', AutoSharkman, function(autosharkfunc)
+Farm:Toggle('Auto Sharkman Karate', AutoSharkman, function(autosharkfunc)
     AutoSharkman = autosharkfunc
     CancelTween(AutoSharkman)
     if AutoSharkman then
@@ -5703,7 +5703,7 @@ spawn(function()
     end
 end)
 
-Farm:Toggle('ออโต้ หมัดสายฟ้า V1', AutoElectricClaw, function(autoelectfunc)
+Farm:Toggle('Auto Electric Claw', AutoElectricClaw, function(autoelectfunc)
     AutoElectricClaw = autoelectfunc
     CancelTween(AutoElectricClaw)
     if AutoElectricClaw then
@@ -5758,7 +5758,7 @@ spawn(function()
     end
 end)
 
-Farm:Toggle('ออโต้ หมัดมังกร V1', AutoDragonTalon, function(autodtfunc)
+Farm:Toggle('Auto Dragon Talon', AutoDragonTalon, function(autodtfunc)
     AutoDragonTalon = autodtfunc
     CancelTween(AutoDragonTalon)
     if AutoDragonTalon then
@@ -5807,7 +5807,7 @@ spawn(function()
     end
 end)
 
-Farm:Toggle('ออโต้ หมัดซุปเปอร์ฮิวแมน V2', AutoGodhuman, function(autogodhumanfunc)
+Farm:Toggle('Auto God Human', AutoGodhuman, function(autogodhumanfunc)
     AutoGodhuman = autogodhumanfunc
     CancelTween(AutoGodhuman)
     if AutoGodhuman then
@@ -5965,7 +5965,7 @@ spawn(function()
                     
                 
                 else
-                    Notification( 'หมัดทั้งหมดต้องเลเวล 400 ครับผม')
+                    Notification( 'Please Up all skill to Lv 400 first before use this.')
                 end
             end)
         end
@@ -5974,26 +5974,26 @@ end)
 
 if World3 then
 
-Farm:Label("คาตาคุริ")
+Farm:Label("🫅 Cake Prince 🫅")
 
 local CakePrinceStatus = Farm:Label("")
 spawn(function()
   while task.wait() do
   pcall(function()
     if string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 88 then
-    CakePrinceStatus:Set("จำนวยมอนที่จะต้องกำจัด | "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,41)..' / 500')
+    CakePrinceStatus:Set("Killed : "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,41)..' / 500')
     elseif string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 87 then
-    CakePrinceStatus:Set("จำนวยมอนที่จะต้องกำจัด | "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,40)..' / 500')
+    CakePrinceStatus:Set("Killed : "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,40)..' / 500')
     elseif string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 86 then
-    CakePrinceStatus:Set("จำนวยมอนที่จะต้องกำจัด | "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,39)..' / 500')
+    CakePrinceStatus:Set("Killed : "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,39)..' / 500')
     else
-      CakePrinceStatus:Set("คาตาคุริ | 🟢")
+      CakePrinceStatus:Set("Cake Prince Has Been Spawned ✅")
     end
     end)
   end
   end)
 
-Farm:Toggle('ออโต้ คาตาคุริ', AutoCakePrince, function(autocakefunc)
+Farm:Toggle('Auto Cake Prince', AutoCakePrince, function(autocakefunc)
   AutoCakePrince = autocakefunc
   CancelTween(AutoCakePrince)
   end)
@@ -6091,7 +6091,7 @@ local EliteProgress = Farm:Label("")
         end
     end)
 
-    Farm:Toggle('ออโต้ Elite Hunter', AutoEliteHunter, function(autoelitefunc)
+    Farm:Toggle('Auto Elite Hunter', AutoEliteHunter, function(autoelitefunc)
         AutoEliteHunter = autoelitefunc
         CancelTween(AutoEliteHunter)
     end)
@@ -6144,13 +6144,13 @@ local EliteProgress = Farm:Label("")
     end
 
 if World2 then
-Farm:Label("เลนโกคุ")
+Farm:Label("🗡️ Auto Rengoku 🗡️")
 
-Farm:Toggle('ออโต้ เลนโกคุ', AutoRengoku, function(autorengokufunc)
+Farm:Toggle('Auto Rengoku', AutoRengoku, function(autorengokufunc)
     AutoRengoku = autorengokufunc
     CancelTween(AutoRengoku)
 end)
-Farm:Toggle('ออโต้ เลนโกคุ | เปลี่ยนเซิฟ', false, function(value)
+Farm:Toggle('Auto Rengoku [HOP]', false, function(value)
 Hop()
 end)
 spawn(function()
@@ -6205,17 +6205,17 @@ end)
 end
 
 if World3 then
-Farm:Label("ดาบบิ๊กมำ")
+Farm:Label("🗡️ Buddy Sword 🗡️")
 
 local queen = Farm:Label("")
 
 if game:GetService("Workspace").Enemies:FindFirstChild("Cake Queen") then
-queen:Set("บอส บิ๊กมำ | 🟢")
+queen:Set("Status : Cake Queen Has Been Spawn ✅")
 else
-queen:Set("บอส บิ๊กมำ |🔴")
+queen:Set("Status : Cake Queen Not Spawn ❌")
 end
 
-Farm:Toggle('ออโต้ ดาบบิ๊กมำ', AutoBuddySword, function(autobuddyswordfunc)
+Farm:Toggle('Auto Buddy Sword', AutoBuddySword, function(autobuddyswordfunc)
     AutoBuddySword = autobuddyswordfunc
     CancelTween(AutoBuddySword)
 end)
@@ -6256,22 +6256,22 @@ spawn(function()
     end
 end)
 
-Farm:Toggle('ออโต้ ดาบบิ๊กมำ | เปลี่ยนเซิฟ', false, function(value)
+Farm:Toggle('Auto Buddy Sword [HOP]', false, function(value)
     Hop()
 end)
 end
 
 if World1 then
-Farm:Label("กระบองสายฟ้า")
+Farm:Label("🗡️ Pole Sword 🗡️")
 
 local pole = Farm:Label("")
 if game:GetService("Workspace").Enemies:FindFirstChild("Thunder God") then
-pole:Set("Thunder God | 🟢")
+pole:Set("Status : Thunder God Has Been Spawn ✅")
 else
-pole:Set("Thunder God 🔴")
+pole:Set("Status : Thunder God Not Spawn ❌")
 end
 
-Farm:Toggle('ออโต้ กระบองสายฟ้า', AutoPole, function(autopolefunc)
+Farm:Toggle('Auto Pole', AutoPole, function(autopolefunc)
     AutoPole = autopolefunc
     CancelTween(AutoPole)
 end)
@@ -6322,22 +6322,22 @@ spawn(function()
     end
 end)
 
-Farm:Toggle('ออโต้ กระบองสายฟ้า | เปลี่ยนเซิฟ' , false, function(value)
+Farm:Toggle('Auto Pole [HOP]' , false, function(value)
     Hop()
 end)
 end
 if World3 then
-Farm:Label("ดาบ ยามะ")
+Farm:Label("🗡️ Yama Sword 🗡️")
 
 local Total_Elite_Hunter = Farm:Label("")
 
 spawn(function()
 		while wait() do
-			Total_Elite_Hunter:Set("ตอนนี้จำจัด Elite Hunter ไปแล้ว | "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))
+			Total_Elite_Hunter:Set("Total Elite Hunter Killed : "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))
 		end
 	end)
 
-Farm:Toggle('ออโต้ ดาบยามะ' , AutoYama, function(autoyamafunc)
+Farm:Toggle('Auto Yama' , AutoYama, function(autoyamafunc)
     AutoYama = autoyamafunc
     CancelTween(AutoYama)
 end)
@@ -6354,15 +6354,15 @@ spawn(function()
     end
 end)
 
-Farm:Label("เคียว")
+Farm:Label("⛏️ Hallow Sycthe ⛏️")
 
 local hallow = Farm:Label("")
 if game:GetService("Workspace").Enemies:FindFirstChild("Soul Reaper") then
-hallow:Set("บอส เคียว | 🟢")
+hallow:Set("Status : Soul Reaper Boss Has Been Spawn ✅")
 else
-hallow:Set("บอส เคียว | 🔴")
+hallow:Set("Status : Soul Reaper Boss Not Spawn ❌")
 end
-Farm:Toggle('ออโต้ เคียว', AutoHallowSycthe, function(autohallowsycthefunc)
+Farm:Toggle('Auto Hallow Sycthe', AutoHallowSycthe, function(autohallowsycthefunc)
     AutoHallowSycthe = autohallowsycthefunc
     CancelTween(AutoHallowSycthe)
 end)
@@ -6414,18 +6414,18 @@ spawn(function()
     end
 end)
 
-Farm:Toggle('ออโต้ เคียว | เปลี่ยนเซิฟ', false, function(value)
+Farm:Toggle('Auto Hallow Sycthe [HOP]', false, function(value)
 Hop()
 end)
 
-Farm:Label("ดาบคาเวนเดอร์")
+Farm:Label("🗡️ Cavander Sword 🗡️")
 local cavander = Farm:Label("")
 if game:GetService("Workspace").Enemies:FindFirstChild("Beautiful Pirate") then
-cavander:Set("บอส คาเวนเดอร์ | 🟢")
+cavander:Set("Status : Beautiful Pirate Has Been Spawn ✅")
 else
-cavander:Set("บอส คาเวนเดอร์ | 🔴")
+cavander:Set("Status : Beautiful Pirate Not Spawn ❌")
 end
-Farm:Toggle('ออโต้ ดาบคาเวนเดอร์ ', AutoCavander, function(autocavanderfunc)
+Farm:Toggle('Auto Cavander', AutoCavander, function(autocavanderfunc)
     AutoCavander = autocavanderfunc
     CancelTween(AutoCavander)
 end)
@@ -6466,13 +6466,13 @@ spawn(function()
         end
     end
 end)
-Farm:Toggle('ออโต้ ดาบคาเวนเดอร์ | เปลี่ยนเซิฟ', false, function(value)
+Farm:Toggle('Auto Canvander [HOP]', false, function(value)
 Hop()
 end)
 
-Farm:Label("ดาบ ทูชิตะ")
+Farm:Label("🗡️ Tushita Sword 🗡️")
 
-Farm:Toggle('ออโต้ ดาบทูชิตะ', AutoTushita, function(autotushitafunc)
+Farm:Toggle('Auto Tushita', AutoTushita, function(autotushitafunc)
     AutoTushita = autotushitafunc
     CancelTween(AutoTushita)
 end)
@@ -6616,13 +6616,13 @@ function autoTushita()
     end
 end
 
-Farm:Toggle('ออโต้ ทูชิตะ | เปลี่ยนเซิฟ', false, function(value)
+Farm:Toggle('Auto Tushita [HOP]', false, function(value)
 Hop()
 end)
 
-Farm:Label("โยรุจิ๋ว")
+Farm:Label("🔪 Dark Dagger 🔪")
 
-Farm:Toggle('ออโต้ โยรุจิ๋ว', AutoDarkDagger, function(autodarkdaggerfunc)
+Farm:Toggle('Auto Dark Dagger', AutoDarkDagger, function(autodarkdaggerfunc)
     AutoDarkDagger = autodarkdaggerfunc
     CancelTween(AutoDarkDagger)
 end)
@@ -6664,15 +6664,15 @@ spawn(function()
     end
 end)
 
-Farm:Toggle('ออโต้ โยรุจิ๋ว | เปลี่ยนเซิฟ', false, function(value)
+Farm:Toggle('Auto Dark Dagger [HOP]', false, function(value)
 Hop()
 end)
 
-Farm:Label("ดาบคู่โอเด้ง")
+Farm:Label("⚔️ Dual Cursed Katana ⚔️")
 
-local Yama = Farm:Label("ดาบยามะ | 🔴")
+local Yama = Farm:Label("❌ : Yama")
 
-local Tushita = Farm:Label("ดาบทูชิตะ | 🔴")
+local Tushita = Farm:Label("❌ : Tushita")
 
 
 spawn(function()
@@ -6680,17 +6680,17 @@ spawn(function()
         pcall(function()
             for i,v in pairs(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")) do
                 if v.Name == "Yama" then
-                    Yama:Set("ดาบยามะ | 🟢")
+                    Yama:Set("✅ : Yama")
                 end
                 if v.Name == "Tushita" then
-                    Tushita:Set("ดาบทูชิตะ | 🟢")
+                    Tushita:Set("✅ : Tushita")
                  end
             end
         end)
     end
 end)
 
-Farm:Toggle('ออโต้ ดาบคู่', false, function(autocdkf)
+Farm:Toggle('Auto Cursed Dual Katana', false, function(autocdkf)
         Auto_Cursed_Dual_Katana = autocdkf
         CancelTween(Auto_Cursed_Dual_Katana)
     end)
@@ -7134,13 +7134,13 @@ Farm:Toggle('ออโต้ ดาบคู่', false, function(autocdkf)
         end
     end)
     
-    Farm:Toggle('ออโต้ ดาบคู่ | เปลี่ยนเซิฟ', false, function(value)
+    Farm:Toggle('Auto Dual Cursed Katana [HOP]', false, function(value)
 Hop()
 end)
     
-    Farm:Label("กีต้าบรู๊ค")
+    Farm:Label("🎸 Soul Guitar 🎸")
 
-    Farm:Toggle('ออโต้ กีต้าบรู๊ค', false, function(soulguiutarf)
+    Farm:Toggle('Auto Soul Guitar', false, function(soulguiutarf)
         AutoSoulGuitar = soulguiutarf
         CancelTween(AutoSoulGuitar)
     end)
@@ -7267,20 +7267,20 @@ end)
         end
     end)
 
-Farm:Toggle('ออโต้ กีต้าบรู๊ค | เปลี่ยนเซิฟ', false, function(value)
+Farm:Toggle('Auto Soul Guitar [HOP]', false, function(value)
 Hop()
 end)
 
 
-Farm:Label("ทะนูงู")
+Farm:Label("🏹 Serpent Bow 🏹")
 
 local serpent = Farm:Label("")
 if game.Workspace.Enemies:FindFirstChild("Island Empress") then
-serpent:Set("บอส Island Impress  | 🟢")
+serpent:Set("Status : Island Impress Boss Has Been Spawn ✅")
 else
-serpent:Set("บอส Island Impress  | 🔴")
+serpent:Set("Status : Island Impress Boss Not Spawn ❌")
 end
-Farm:Toggle('ออโต้ ทะนูงู', false, function(asbgh)
+Farm:Toggle('Auto Serpent Bow', false, function(asbgh)
     Auto_Serpent_Bow = asbgh
     CancelTween(Auto_Serpent_Bow)
 end)
@@ -7320,7 +7320,7 @@ spawn(function()
     end
 end)
 
-Farm:Toggle('ออโต้ ทะนูงู | เปลี่ยนเซิฟ', false, function(value)
+Farm:Toggle('Auto Serpent Bow [HOP]', false, function(value)
 Hop()
 end)
 end
@@ -7328,8 +7328,8 @@ end
      
     
 if World1 then
-Farm:Label("ดาบเซเบอร์")
-    Farm:Toggle('ออโต้ ดาบเซเบอร์', false, function(autosaberfunc)
+Farm:Label("🗡️ Saber Sword 🗡️")
+    Farm:Toggle('Auto Saber', false, function(autosaberfunc)
         AutoSaber = autosaberfunc
         CancelTween(AutoSaber)
     end)
@@ -7446,12 +7446,12 @@ Farm:Label("ดาบเซเบอร์")
             end
         end
     end)
-    Farm:Toggle('ออโต้ ดาบเซเบอร์ | เปลี่ยนเซิฟ', false, function(value)
+    Farm:Toggle('Auto Saber [HOP]', false, function(value)
 Hop()
 end)
 end
 
-Farm:Label("เควสต์ และ อื่นๆ")
+Farm:Label("📜 Other Quest 📜")
 
 if World2 then
 Farm:Toggle('Auto Citizen', AutoCitizen, function(aef)
@@ -7555,7 +7555,7 @@ spawn(function()
 end)
 end
 
-Farm:Toggle('ออโต้ เผ่า V2', AutoEvoRace, function(aef)
+Farm:Toggle('Auto Evo Race', AutoEvoRace, function(aef)
     AutoEvoRace = aef
     CancelTween(AutoEvoRace)
 end)
@@ -7722,7 +7722,7 @@ spawn(function()
     end
 end)
 
-Farm:Toggle('ออโต้ ตีโรงงาน', AutoFactory, function(aef)
+Farm:Toggle('AutoFactory', AutoFactory, function(aef)
     AutoFactory = aef
     CancelTween(AutoFactory)
 end)
@@ -7761,7 +7761,7 @@ spawn(function()
 end)
 end
 if World3 then
-    Farm:Toggle('ออโต้ แอดมิล', false, function(ripindraf)
+    Farm:Toggle('Auto Rip Indra', false, function(ripindraf)
         RipIndra = ripindraf
         CancelTween(RipIndra)
     end)
@@ -7811,7 +7811,7 @@ if World3 then
         end
     end)
 
-    Farm:Toggle('ออโต้ ฮาคิสีรุ้ง', false, function(autorainbowfunc)
+    Farm:Toggle('Auto Rainbow Haki', false, function(autorainbowfunc)
         AutoRainbowHaki = autorainbowfunc
         CancelTween(AutoRainbowHaki)
     end)
@@ -8063,7 +8063,7 @@ if World3 then
         end
     end)
 
-    Farm:Toggle('ออโต้ จุดคบเพลิง', false, function(holytorchf)
+    Farm:Toggle('Auto Holy Torch', false, function(holytorchf)
         AutoTorch = holytorchf
         CancelTween(AutoTorch)
     end)
@@ -8097,7 +8097,7 @@ if World3 then
     end
 
     
-Farm:Toggle("Dungeon Phoenix", false, function(value)
+Farm:Toggle("Auto Advance Dungeon", false, function(value)
     AutoAdvanceDungeon = value
     CancelTween(AutoAdvanceDungeon)
 end)
@@ -8132,7 +8132,7 @@ spawn(function()
 end)
 end
 
-Farm:Toggle('ออโต้ ดาบหายาก', false, function(autolegendsw)
+Farm:Toggle('Auto Legendary Sword', false, function(autolegendsw)
     AutoLegendarySword = autolegendsw
 end)
 spawn(function()
@@ -8147,7 +8147,7 @@ spawn(function()
     end
 end)
 
-Farm:Toggle('ออโต้ ซื้อสีฮาคิ', false, function(autocolorhk)
+Farm:Toggle('Auto Enchancement Haki', false, function(autocolorhk)
     AutoColorHaki = autocolorhk
 end)
 spawn(function()
@@ -8207,7 +8207,7 @@ spawn(function()
     end
 end)
 if World2 then
-    Farm:Toggle("ออโต้ โดฟา", false, function(donswanfunc)
+    Farm:Toggle("Auto Don Swan", false, function(donswanfunc)
         _G.SwanGlasses = donswanfunc
         CancelTween(_G.SwanGlasses)
         if _G.SwanGlasses == false then
@@ -8249,9 +8249,9 @@ if World2 then
         end
     end)
     end
-Stats:Label("ออโต้ ค่าพลัง")
+Stats:Label("📊 Auto Stats 📊")
 
-Stats:Toggle("ไก่ตัน",_G.Auto_Stats_Kaitun,function(value)
+Stats:Toggle("Auto Stats Kaitun",_G.Auto_Stats_Kaitun,function(value)
 _G.Auto_Stats_Kaitun = value
 end)
 
@@ -8289,7 +8289,7 @@ spawn(function()
 	end
 end)
 
-Stats:Toggle("หมัด",_G.Auto_Stats_Melee,function(value)
+Stats:Toggle("Auto Stats Melee",_G.Auto_Stats_Melee,function(value)
  _G.Auto_Stats_Melee = value
 end)
 
@@ -8308,7 +8308,7 @@ spawn(function()
 	end
 end)
 
-Stats:Toggle("เลือด",_G.Auto_Stats_Defense,function(value)
+Stats:Toggle("Auto Stats Defense",_G.Auto_Stats_Defense,function(value)
  _G.Auto_Stats_Defense = value
 end)
 
@@ -8327,7 +8327,7 @@ spawn(function()
 	end
 end)
 
-Stats:Toggle("ดาบ",_G.Auto_Stats_Sword,function(value)
+Stats:Toggle("Auto Stats Sword",_G.Auto_Stats_Sword,function(value)
  _G.Auto_Stats_Sword = value
 end)
 
@@ -8346,7 +8346,7 @@ spawn(function()
 	end
 end)
 
-Stats:Toggle("ปืน",_G.Auto_Stats_Gun,function(value)
+Stats:Toggle("Auto Stats Gun",_G.Auto_Stats_Gun,function(value)
  _G.Auto_Stats_Gun = value
 end)
 
@@ -8364,7 +8364,7 @@ spawn(function()
 	end
 end)
 
-Stats:Toggle("ผลปีศาจ",_G.Auto_Stats_Devil_Fruit,function(value)
+Stats:Toggle("Auto Stats Devil Fruit",_G.Auto_Stats_Devil_Fruit,function(value)
  _G.Auto_Stats_Devil_Fruit = value
 end)
 
@@ -8383,11 +8383,11 @@ spawn(function()
 	end
 end)
 
-Stats:Button("รีค่าพลัง",function()
+Stats:Button("Stat Refund",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones","Buy",1,2)
   end)
 
-Stats:Slider("เลือกจำนวน",1,100,1,function(value)
+Stats:Slider("Select Point",1,100,1,function(value)
 _G.Point = value
 return "Point : " .. tostring(value)
 end)
@@ -8395,13 +8395,13 @@ end)
 
     
     
-    Stats:Label("เขียน")
+    Stats:Label("📝 Fake 📝")
     
-    Stats:Toggle("เขียนค่าพลัง",true,function(value)
+    Stats:Toggle("Enabled Fake",true,function(value)
         _G.EnabledStat = value
     end)
     
-    Stats:TextBox("เลเวล", "Hi", function(value)
+    Stats:TextBox("Level", "Hi", function(value)
         if _G.EnabledStat then
             game:GetService("Players")["LocalPlayer"].Data.Level.Value = tonumber(value)
         end
@@ -8413,58 +8413,58 @@ end)
         end
     end)
     
-    Stats:TextBox("เงียน", "Hi", function(value)
+    Stats:TextBox("Beli", "Hi", function(value)
         if _G.EnabledStat then
             game:GetService("Players")["LocalPlayer"].Data.Beli.Value = tonumber(value)
         end
     end)
     
-    Stats:TextBox("เงินม่วง", "Hi", function(value)
+    Stats:TextBox("Fragments", "Hi", function(value)
         if _G.EnabledStat then
             game:GetService("Players")["Localplayer"].Data.Fragments.Value = tonumber(value)
         end
     end)
     
-    Stats:TextBox("หมัด", "Hi", function(value)
+    Stats:TextBox("Melee", "Hi", function(value)
         if _G.EnabledStat then
             game:GetService("Players")["LocalPlayer"].Data.Stats.Melee.Level.Value = tonumber(value)
         end
     end)
     
-    Stats:TextBox("เลือด", "Hi", function(value)
+    Stats:TextBox("Defense", "Hi", function(value)
         if _G.EnabledStat then
             game:GetService("Players")["LocalPlayer"].Data.Stats.Defense.Level.Value = tonumber(value)
         end
     end)
     
-    Stats:TextBox("ดาบ", "Hi", function(value)
+    Stats:TextBox("Sword", "Hi", function(value)
         if _G.EnabledStat then
             game:GetService("Players")["LocalPlayer"].Data.Stats.Sword.Level.Value = tonumber(value)
         end
     end)
     
-    Stats:TextBox("ปืน", "Hi", function(value)
+    Stats:TextBox("Gun", "Hi", function(value)
         if _G.EnabledStat then
             game:GetService("Players")["LocalPlayer"].Data.Stats.Gun.Level.Value = tonumber(value)
         end
     end)
-    Stats:TextBox("ผลปีศาจ", "Hi", function(value)
+    Stats:TextBox("Fruit", "Hi", function(value)
         if _G.EnabledStat then
             game:GetService("Players")["LocalPlayer"].Data.Stats["Demon Fruit"].Level.Value = tonumber(value)
         end
     end)
     
-    Stats:TextBox("ค่าหัว", "Hi", function(value)
+    Stats:TextBox("Bounty", "Hi", function(value)
         if _G.EnabledStat then
             game:GetService("Players")["LocalPlayer"].leaderstats["Bounty/Honor"].Value = tonumber(value)
         end
     end)
 if World1 or World2 then
-Sea:Label("โลก 1 และ โลก 2 ผมยังไม่ได้ทำนะครับ")
+Sea:Label("Sea Event In Third Sea!!")
 end
 
 if World3 then
-Sea:Label("อีเว้นท์ทะเล")
+Sea:Label("🌊 Sea Evens🌊")
 
 
 BoatDataLis = {
@@ -8478,12 +8478,12 @@ BoatDataLis = {
 }
 
 SelectBoat = "PirateBrigade"	
-Sea:Dropdown("เลือกเรือ",BoatDataLis,function(value)
+Sea:Dropdown("Select Boats",BoatDataLis,function(value)
 SelectBoat = value
 end)
 
 _G.SelectLocalTeleportSea = "Sea5[Crazy]"	
-Sea:Dropdown("เลือกเขต",{"Sea1[Low]","Sea2[Medium]","Sea3[High]","Sea4[Extreme]","Sea5[Crazy]","Sea6[???]"},function(value)
+Sea:Dropdown("Select Sea",{"Sea1[Low]","Sea2[Medium]","Sea3[High]","Sea4[Extreme]","Sea5[Crazy]","Sea6[???]"},function(value)
 SelectLocalTeleportSea = value
 end)
 
